@@ -104,7 +104,6 @@ TARGET_VENDOR_PROP += $(COMMON_PATH)/vendor.prop
 
 ## Treble
 BOARD_VNDK_VERSION := current
-PRODUCT_FULL_TREBLE_OVERRIDE := true
 
 ## Recovery
 TARGET_RECOVERY_FSTAB := $(COMMON_PATH)/init-files/recovery.fstab
