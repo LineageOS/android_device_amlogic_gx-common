@@ -102,9 +102,6 @@ TARGET_BOARD_PLATFORM := amlogic
 ## Properties
 TARGET_VENDOR_PROP += $(COMMON_PATH)/vendor.prop
 
-## Treble
-BOARD_VNDK_VERSION := current
-
 ## Recovery
 TARGET_RECOVERY_FSTAB := $(COMMON_PATH)/init-files/recovery.fstab
 TARGET_RECOVERY_PIXEL_FORMAT := "BGRA_8888"
