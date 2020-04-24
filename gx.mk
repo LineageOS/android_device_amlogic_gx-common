@@ -205,5 +205,6 @@ PRODUCT_PACKAGES += \
     android.hardware.wifi@1.2-service \
     hostapd \
     libwpa_client \
+    WifiOverlay \
     wpa_supplicant \
     wpa_supplicant.conf
