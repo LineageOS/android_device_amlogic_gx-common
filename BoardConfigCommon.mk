@@ -48,6 +48,7 @@ BOARD_KERNEL_CMDLINE := otg_device=1
 BOARD_KERNEL_IMAGE_NAME := Image.gz
 BOARD_KERNEL_PAGESIZE := 2048
 BOARD_KERNEL_SEPARATED_DTBO := true
+TARGET_KERNEL_ADDITIONAL_FLAGS := HOSTCFLAGS="-fuse-ld=lld -Wno-unused-command-line-argument"
 TARGET_KERNEL_CLANG_COMPILE := false
 TARGET_KERNEL_CONFIG := gxl_sei210_defconfig
 TARGET_KERNEL_SOURCE := kernel/amlogic/linux-4.9-pie
