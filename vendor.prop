@@ -1,0 +1,125 @@
+#
+# Copyright (C) 2022 The LineageOS Project
+#
+# SPDX-License-Identifier: Apache-2.0
+#
+
+## Audio
+ro.audio.mapvalue=0,0,0,0
+ro.config.ringtone=Ring_Synth_04.ogg
+ro.config.notification_sound=pixiedust.ogg
+ro.platform.disable.audiorawout=false
+
+## Bluetooth
+bluetooth.enable_timeout_ms=11000
+config.disable_bluetooth=false
+persist.bluetooth.btsnoopenable=false
+persist.bluetooth.btsnooppath=/data/misc/bluedroid/btsnoop_hci.cfa
+persist.bluetooth.btsnoopsize=0xffff
+ro.autoconnectbt.isneed=false
+ro.autoconnectbt.nameprefix=Amlogic_RC
+
+## Camera
+config.disable_cameraservice=true
+camera.disable_zsl_mode=1
+ro.camera.preview.MaxSize=1920x1080
+ro.camera.preview.LimitedRate=1920x1080x30,1280x720x30,640x480x30,320x240x28
+ro.camera.preview.UseMJPEG=1
+rw.camera.usb.faceback=true
+
+## Crypto
+ro.crypto.volume.filenames_mode=aes-256-cts
+
+## Dalvik
+dalvik.vm.heapstartsize=16m
+dalvik.vm.heapsize=512m
+dalvik.vm.heapgrowthlimit=256m
+dalvik.vm.heaptargetutilization=0.75
+dalvik.vm.heapminfree=512k
+dalvik.vm.heapmaxfree=8m
+ro.dalvik.vm.native.bridge=0
+
+## DRM
+drm.service.enable=true
+
+## HDMI
+mbx.hdmiin.switchfull=false
+mbx.hdmiin.videolayer=false
+persist.sys.hdmi.keep_awake=false
+ro.hdmi.device_type=4
+ro.hdmi.set_menu_language=false
+ro.sys.hdmiin.enable=true
+service.bootvideo=0
+
+## Graphics
+debug.sf.disable_backpressure=1
+debug.sf.latch_unsignaled=1
+debug.hwui.render_dirty_regions=false
+debug.hwui.use_buffer_age=false
+ro.hwui.texture_cache_size=64.0f
+ro.opengles.version=131072
+ro.sf.disable_triple_buffer=1
+
+## Logging
+ro.logd.size.stats=64K
+log.tag.stats_log=I
+
+## Media
+libplayer.livets.softdemux=1
+libplayer.netts.recalcpts=1
+media.amplayer.seekkeyframe=true
+media.amsuperplayer.enable=true
+media.amplayer.enable-acodecs=ac3,eac3,rm,dts
+media.amplayer.enable=true
+media.amplayer.widevineenable=true
+media.amsuperplayer.m4aplayer=STAGEFRIGHT_PLAYER
+media.amsuperplayer.defplayer=PV_PLAYER
+media.amplayer.thumbnail=true
+media.amplayer.dsource4local=1
+media.amplayer.dropwaitxms=100
+media.arm.audio.decoder=ape,flac,dts,ac3,eac3,wma,wmapro,mp3,aac,vorbis,raac,cook,amr,pcm,adpcm,aac_latm,rm
+media.wfd.use-pcm-audio=false
+media.wfd.videoresolution-type=1
+media.wfd.videoresolution-group=0
+media.wfd.videoframerate=24
+media.wfd.video-bitrate=2000000
+media.html5videowin.enable=1
+media.decoder.vfm.defmap=decoder
+media.decoder.vfm.drmmap=decoder
+media.libplayer.curlenable=true
+media.libplayer.modules=vhls_mod,dash_mod,curl_mod,prhls_mod,vm_mod,bluray_mod
+media.libplayer.seek.fwdsearch=1
+persist.sys.media.avsync=true
+ro.media.maxmem=629145600
+sys.open.deepcolor=true
+
+## Net
+net.tethering.noprovisioning=true
+ro.carrier=unknown
+ro.net.pppoe=true
+
+## Platform
+fw.disable_quota=true
+persist.fw.force_adoptable=true
+persist.sys.app.rotation=original
+ro.app.optimization=true
+ro.boot.droidlogic.never_sleep=true
+ro.boot.fake_battery=42
+ro.platform.has.mbxuimode=true
+ro.platform.has.realoutputmode=true
+ro.platform.support.dolby=true
+ro.platform.support.dts=true
+ro.sys.sdcardfs=true
+
+## Radio
+ro.radio.noril=false
+
+## Time Zone
+persist.sys.timezone=America/Los_Angeles
+ro.com.android.dateformat=MM-dd-yyyy
+
+## USB
+service.adb.tcp.port=5555
+
+## Wi-Fi
+wifi.interface=wlan0
