@@ -129,6 +129,10 @@ PRODUCT_PACKAGES += \
     android.hardware.light@2.0-service \
     android.hardware.light@2.0-impl
 
+## Logo
+PRODUCT_HOST_PACKAGES += \
+    res_packer
+
 ## Memtrack
 PRODUCT_PACKAGES += \
     android.hardware.memtrack@1.0-impl \
