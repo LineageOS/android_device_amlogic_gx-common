@@ -113,6 +113,12 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/init-files/init.recovery.amlogic.rc:recovery/root/init.recovery.amlogic.rc \
     $(LOCAL_PATH)/init-files/ueventd.rc:$(TARGET_COPY_OUT_VENDOR)/ueventd.rc
 
+## Kernel Modules
+PRODUCT_PACKAGES += \
+    mali \
+    media \
+    optee-module
+
 ## Keymaster
 PRODUCT_PACKAGES += \
     android.hardware.keymaster@3.0-service \

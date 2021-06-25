@@ -60,6 +60,9 @@ fi
 
 function blob_fixup() {
      case "${1}" in
+        vendor/etc/init/tee-supplicant.rc)
+             sed -i s#/vendor/lib/#/vendor/lib/modules/#g "${2}"
+             ;;
      esac
  }
 
