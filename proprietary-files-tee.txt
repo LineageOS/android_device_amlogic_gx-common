@@ -1,0 +1,10 @@
+### All blobs from this list, unless pinned and noted as otherwise,
+##  are from adt2-user 9 PTT5.190307.001 5360859 dev-keys.
+
+## TEE
+vendor/bin/tee-supplicant|2c3c677d5880817be2e34d8cc971f587284afd1d
+vendor/bin/tee_preload_fw|cf7574e36cb1b2c341f5a9044a32460be0ff2891
+vendor/etc/init/tee-supplicant.rc|2d3ad4f23939874c2f3046b7550f4ea3455333d7|4524a076999fffbd0d9a690b5b881194d6e0ff59
+vendor/lib/libsecmem.so|801fa2a2623a8a74cdf8bc57c8d0258086933831
+vendor/lib/libtee_load_video_fw.so|a85c4540672bd81840453c36bf9091961f86571b
+vendor/lib/libteec.so|41824fca98d1edb7dfa45755f2e3ce7686b99339
