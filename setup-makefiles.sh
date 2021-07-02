@@ -51,6 +51,13 @@ if [ -s "${MY_DIR}/../../${VENDOR_DEVICE}/${DEVICE}/proprietary-files.txt" ]; th
       write_makefiles "${MY_DIR}/../../${VENDOR_COMMON}/${DEVICE_COMMON}/proprietary-files-gxm.txt" true
     fi
 
+    # Allow opting out of OP-TEE
+    printf '\n%s\n' 'ifneq ($(TARGET_HAS_TEE),false)' >> "$PRODUCTMK"
+
+    write_makefiles "${MY_DIR}/proprietary-files-tee.txt" true
+
+    printf '%s\n' 'endif' >> "$PRODUCTMK"
+
     # Finish
     write_footers
 fi
