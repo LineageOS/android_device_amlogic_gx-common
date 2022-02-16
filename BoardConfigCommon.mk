@@ -14,6 +14,7 @@ DEVICE_MANIFEST_FILE += $(COMMON_PATH)/manifest.xml
 
 ## Kernel
 TARGET_KERNEL_CLANG_COMPILE := false
+BOARD_KERNEL_CMDLINE += androidboot.boot_devices=ffe07000.emmc
 TARGET_KERNEL_CONFIG := meson64_defconfig
 TARGET_KERNEL_SOURCE := kernel/amlogic/linux-4.9-pie
 
