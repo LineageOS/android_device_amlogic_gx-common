@@ -69,7 +69,7 @@ vendor/lib/vendor.amlogic.hardware.tvserver@1.0.so
 # Java
 vendor/framework/droidlogic.jar
 vendor/framework/droidlogic-tv.jar
--product/priv-app/droidlogic-res/droidlogic-res.apk
+product/priv-app/droidlogic-res/droidlogic-res.apk
 vendor/lib/libremotecontrol_jni.so
 vendor/lib/libsystemcontrol_jni.so
 vendor/lib/libsystemcontrol_jni.so:lib/libsystemcontrol_jni.so
