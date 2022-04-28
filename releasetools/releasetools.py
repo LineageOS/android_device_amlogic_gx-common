@@ -33,17 +33,17 @@ def PrintInfo(info, dest):
   info.script.Print("Patching {} image unconditionally...".format(dest.split('/')[-1]))
 
 def OTA_InstallEnd(info):
-  PrintInfo(info, "/dev/block/by-name/dtbo")
-  AddImage(info, "IMAGES/", "dtbo.img", "/dev/block/by-name/dtbo")
-  PrintInfo(info, "/dev/block/by-name/vbmeta")
-  AddImage(info, "IMAGES/", "vbmeta.img", "/dev/block/by-name/vbmeta")
+  PrintInfo(info, "/dev/block/dtbo")
+  AddImage(info, "IMAGES/", "dtbo.img", "/dev/block/dtbo")
+  PrintInfo(info, "/dev/block/vbmeta")
+  AddImage(info, "IMAGES/", "vbmeta.img", "/dev/block/vbmeta")
   if 'RADIO/dtb.img' in info.input_zip.namelist():
     PrintInfo(info, "/dev/dtb")
     AddDtbImage(info, "RADIO/", "dtb.img")
   if 'RADIO/logo.img' in info.input_zip.namelist():
-    PrintInfo(info, "/dev/block/by-name/logo")
-    AddImage(info, "RADIO/", "logo.img", "/dev/block/by-name/logo")
+    PrintInfo(info, "/dev/block/logo")
+    AddImage(info, "RADIO/", "logo.img", "/dev/block/logo")
   if 'RADIO/bootloader.img' in info.input_zip.namelist():
-    PrintInfo(info, "/dev/block/by-name/bootloader")
-    AddImage(info, "RADIO/", "bootloader.img", "/dev/block/by-name/bootloader")
+    PrintInfo(info, "/dev/block/bootloader")
+    AddImage(info, "RADIO/", "bootloader.img", "/dev/block/bootloader")
   return
