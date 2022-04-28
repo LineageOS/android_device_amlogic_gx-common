@@ -9,7 +9,6 @@
 /dev/block/vendor       /vendor ext4    defaults    defaults
 /dev/block/odm          /odm    ext4    defaults    defaults
 /dev/block/param        /param    ext4    defaults    defaults
-/dev/block/product      /product    ext4    defaults    defaults
 /dev/block/metadata     /metadata    ext4    defaults    defaults
 /dev/block/tee          /tee    ext4    defaults    defaults
 /dev/block/cache        /cache  ext4    defaults    defaults
