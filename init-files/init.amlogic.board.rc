@@ -9,7 +9,7 @@ on early-init
 on init
     insmod /vendor/lib/modules/8822bs.ko  ifname=wlan0 if2name=p2p0
 on post-fs-data
-    insmod /vendor/lib/mali.ko
+    insmod /vendor/lib/modules/mali.ko
     insmod /vendor/lib/modules/cfg80211.ko
 
 on boot
