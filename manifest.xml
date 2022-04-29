@@ -1,23 +1,12 @@
 <manifest version="1.0" type="device" target-level="3">
     <hal format="hidl">
-        <name>android.hardware.audio</name>
+        <name>android.hardware.configstore</name>
         <transport>hwbinder</transport>
-        <version>4.0</version>
+        <version>1.1</version>
         <interface>
-            <name>IDevicesFactory</name>
+            <name>ISurfaceFlingerConfigs</name>
             <instance>default</instance>
         </interface>
-        <fqname>@2.0::IDevicesFactory/default</fqname>
-    </hal>
-    <hal format="hidl">
-        <name>android.hardware.audio.effect</name>
-        <transport>hwbinder</transport>
-        <version>4.0</version>
-        <interface>
-            <name>IEffectsFactory</name>
-            <instance>default</instance>
-        </interface>
-        <fqname>@2.0::IEffectsFactory/default</fqname>
     </hal>
     <hal format="hidl">
         <name>android.hardware.bluetooth</name>
@@ -27,56 +16,42 @@
             <name>IBluetoothHci</name>
             <instance>default</instance>
         </interface>
-        <fqname>@1.0::IBluetoothHci/default</fqname>
     </hal>
     <hal format="hidl">
-        <name>android.hardware.configstore</name>
-        <transport>hwbinder</transport>
-        <version>1.1</version>
-        <interface>
-            <name>ISurfaceFlingerConfigs</name>
-            <instance>default</instance>
-        </interface>
-        <fqname>@1.1::ISurfaceFlingerConfigs/default</fqname>
-    </hal>
-    <hal format="hidl">
-        <name>android.hardware.drm</name>
+        <name>android.hardware.power</name>
         <transport>hwbinder</transport>
         <version>1.0</version>
         <interface>
-            <name>ICryptoFactory</name>
+            <name>IPower</name>
             <instance>default</instance>
         </interface>
-        <interface>
-            <name>IDrmFactory</name>
-            <instance>default</instance>
-        </interface>
-        <fqname>@1.0::ICryptoFactory/default</fqname>
-        <fqname>@1.0::IDrmFactory/default</fqname>
-        <fqname>@1.1::ICryptoFactory/clearkey</fqname>
-        <fqname>@1.1::ICryptoFactory/widevine</fqname>
-        <fqname>@1.1::IDrmFactory/clearkey</fqname>
-        <fqname>@1.1::IDrmFactory/widevine</fqname>
     </hal>
     <hal format="hidl">
-        <name>android.hardware.dumpstate</name>
+        <name>android.hardware.memtrack</name>
         <transport>hwbinder</transport>
         <version>1.0</version>
         <interface>
-            <name>IDumpstateDevice</name>
+            <name>IMemtrack</name>
             <instance>default</instance>
         </interface>
-        <fqname>@1.0::IDumpstateDevice/default</fqname>
     </hal>
     <hal format="hidl">
-        <name>android.hardware.gatekeeper</name>
+        <name>android.hardware.audio</name>
         <transport>hwbinder</transport>
-        <version>1.0</version>
+        <version>4.0</version>
         <interface>
-            <name>IGatekeeper</name>
+            <name>IDevicesFactory</name>
             <instance>default</instance>
         </interface>
-        <fqname>@1.0::IGatekeeper/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>android.hardware.audio.effect</name>
+        <transport>hwbinder</transport>
+        <version>4.0</version>
+        <interface>
+            <name>IEffectsFactory</name>
+            <instance>default</instance>
+        </interface>
     </hal>
     <hal format="hidl">
         <name>android.hardware.graphics.allocator</name>
@@ -86,17 +61,6 @@
             <name>IAllocator</name>
             <instance>default</instance>
         </interface>
-        <fqname>@2.0::IAllocator/default</fqname>
-    </hal>
-    <hal format="hidl">
-        <name>android.hardware.graphics.composer</name>
-        <transport>hwbinder</transport>
-        <version>2.1</version>
-        <interface>
-            <name>IComposer</name>
-            <instance>default</instance>
-        </interface>
-        <fqname>@2.1::IComposer/default</fqname>
     </hal>
     <hal format="hidl">
         <name>android.hardware.graphics.mapper</name>
@@ -106,37 +70,6 @@
             <name>IMapper</name>
             <instance>default</instance>
         </interface>
-        <fqname>@2.0::IMapper/default</fqname>
-    </hal>
-    <hal format="hidl">
-        <name>android.hardware.health</name>
-        <transport>hwbinder</transport>
-        <version>2.0</version>
-        <interface>
-            <name>IHealth</name>
-            <instance>default</instance>
-        </interface>
-        <fqname>@2.0::IHealth/default</fqname>
-    </hal>
-    <hal format="hidl">
-        <name>android.hardware.keymaster</name>
-        <transport>hwbinder</transport>
-        <version>3.0</version>
-        <interface>
-            <name>IKeymasterDevice</name>
-            <instance>default</instance>
-        </interface>
-        <fqname>@3.0::IKeymasterDevice/default</fqname>
-    </hal>
-    <hal format="hidl">
-        <name>android.hardware.light</name>
-        <transport>hwbinder</transport>
-        <version>2.0</version>
-        <interface>
-            <name>ILight</name>
-            <instance>default</instance>
-        </interface>
-        <fqname>@2.0::ILight/default</fqname>
     </hal>
     <hal format="hidl">
         <name>android.hardware.media.omx</name>
@@ -150,38 +83,77 @@
             <name>IOmxStore</name>
             <instance>default</instance>
         </interface>
-        <fqname>@1.0::IOmx/default</fqname>
-        <fqname>@1.0::IOmxStore/default</fqname>
     </hal>
     <hal format="hidl">
-        <name>android.hardware.memtrack</name>
+        <name>android.hardware.keymaster</name>
+        <transport>hwbinder</transport>
+        <version>3.0</version>
+        <interface>
+            <name>IKeymasterDevice</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl">
+        <name>android.hardware.drm</name>
         <transport>hwbinder</transport>
         <version>1.0</version>
         <interface>
-            <name>IMemtrack</name>
+            <name>ICryptoFactory</name>
             <instance>default</instance>
         </interface>
-        <fqname>@1.0::IMemtrack/default</fqname>
+        <interface>
+            <name>IDrmFactory</name>
+            <instance>default</instance>
+        </interface>
+        <fqname>@1.1::ICryptoFactory/clearkey</fqname>
+        <fqname>@1.1::IDrmFactory/clearkey</fqname>
+        <fqname>@1.1::ICryptoFactory/widevine</fqname>
+        <fqname>@1.1::IDrmFactory/widevine</fqname>
     </hal>
     <hal format="hidl">
-        <name>android.hardware.power</name>
+        <name>android.hardware.graphics.composer</name>
+        <transport>hwbinder</transport>
+        <version>2.2</version>
+        <interface>
+            <name>IComposer</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal>
+        <name>android.hardware.tv.cec</name>
         <transport>hwbinder</transport>
         <version>1.0</version>
         <interface>
-            <name>IPower</name>
+            <name>IHdmiCec</name>
             <instance>default</instance>
         </interface>
-        <fqname>@1.0::IPower/default</fqname>
     </hal>
-    <hal format="hidl">
-        <name>android.hardware.soundtrigger</name>
+    <hal>
+        <name>vendor.amlogic.hardware.systemcontrol</name>
         <transport>hwbinder</transport>
-        <version>2.0</version>
+        <version>1.1</version>
         <interface>
-            <name>ISoundTriggerHw</name>
+            <name>ISystemControl</name>
             <instance>default</instance>
         </interface>
-        <fqname>@2.0::ISoundTriggerHw/default</fqname>
+    </hal>
+    <hal>
+        <name>vendor.amlogic.hardware.hdmicec</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>IDroidHdmiCEC</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal>
+        <name>vendor.amlogic.hardware.remotecontrol</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>IRemoteControl</name>
+            <instance>default</instance>
+        </interface>
     </hal>
     <hal format="hidl">
         <name>android.hardware.thermal</name>
@@ -191,56 +163,59 @@
             <name>IThermal</name>
             <instance>default</instance>
         </interface>
-        <fqname>@1.0::IThermal/default</fqname>
     </hal>
     <hal format="hidl">
-        <name>android.hardware.tv.cec</name>
+        <name>android.hardware.light</name>
+        <transport>hwbinder</transport>
+        <version>2.0</version>
+        <interface>
+            <name>ILight</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl">
+        <name>android.hardware.health</name>
+        <transport>hwbinder</transport>
+        <version>2.0</version>
+        <interface>
+            <name>IHealth</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl">
+        <name>android.hardware.camera.provider</name>
+        <transport>hwbinder</transport>
+        <version>2.4</version>
+        <interface>
+            <name>ICameraProvider</name>
+            <instance>legacy/0</instance>
+        </interface>
+    </hal>
+    <hal format="hidl">
+        <name>android.hardware.dumpstate</name>
         <transport>hwbinder</transport>
         <version>1.0</version>
         <interface>
-            <name>IHdmiCec</name>
+            <name>IDumpstateDevice</name>
             <instance>default</instance>
         </interface>
-        <fqname>@1.0::IHdmiCec/default</fqname>
     </hal>
     <hal format="hidl">
-        <name>vendor.amlogic.hardware.droidvold</name>
+        <name>android.hardware.soundtrigger</name>
+        <transport>hwbinder</transport>
+        <version>2.1</version>
+        <interface>
+            <name>ISoundTriggerHw</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.amlogic.hardware.miracast_hdcp2</name>
         <transport>hwbinder</transport>
         <version>1.0</version>
         <interface>
-            <name>IDroidVold</name>
+            <name>IHDCPService</name>
             <instance>default</instance>
         </interface>
-        <fqname>@1.0::IDroidVold/default</fqname>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.amlogic.hardware.hdmicec</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>IDroidHdmiCEC</name>
-            <instance>default</instance>
-        </interface>
-        <fqname>@1.0::IDroidHdmiCEC/default</fqname>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.amlogic.hardware.remotecontrol</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>IRemoteControl</name>
-            <instance>default</instance>
-        </interface>
-        <fqname>@1.0::IRemoteControl/default</fqname>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.amlogic.hardware.systemcontrol</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>ISystemControl</name>
-            <instance>default</instance>
-        </interface>
-        <fqname>@1.0::ISystemControl/default</fqname>
     </hal>
 </manifest>
