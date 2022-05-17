@@ -120,6 +120,7 @@ ro.com.android.dateformat=MM-dd-yyyy
 
 ## USB
 service.adb.tcp.port=5555
+vendor.usb.controller=c9100000.dwc2_a
 
 ## Wi-Fi
 wifi.interface=wlan0
