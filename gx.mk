@@ -6,7 +6,7 @@
 
 $(call inherit-product, vendor/amlogic/gx-common/gx-common-vendor.mk)
 
-$(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 
 ## AAPT
 PRODUCT_AAPT_PREF_CONFIG := tvdpi
