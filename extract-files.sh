@@ -66,6 +66,18 @@ function blob_fixup() {
         vendor/etc/wifi/wpa_supplicant_overlay.conf)
              echo "driver_param=use_p2p_group_interface=1">>"${2}"
              ;;
+        vendor/lib/libOmxVideo.so)
+             "${PATCHELF}" --add-needed "libaml_symbols.so" "${2}"
+             ;;
+        vendor/lib/libOmxBase.so)
+             "${PATCHELF}" --add-needed "libaml_symbols.so" "${2}"
+             ;;
+        vendor/lib/hw/camera.amlogic.so)
+             "${PATCHELF}" --add-needed "libaml_symbols.so" "${2}"
+             ;;
+        vendor/lib/hw/hwcomposer.amlogic.so)
+             "${PATCHELF}" --add-needed "libaml_symbols.so" "${2}"
+             ;;
      esac
  }
 
