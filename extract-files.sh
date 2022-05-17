@@ -78,6 +78,10 @@ function blob_fixup() {
         vendor/lib/hw/hwcomposer.amlogic.so)
              "${PATCHELF}" --add-needed "libaml_symbols.so" "${2}"
              ;;
+        vendor/lib/libOmxCoreSw.so)
+             "${PATCHELF}" --add-needed "libstagefright_softomx.so" "${2}"
+             ;;
+
      esac
  }
 
