@@ -57,7 +57,6 @@ debug.sf.latch_unsignaled=1
 debug.hwui.render_dirty_regions=false
 debug.hwui.use_buffer_age=false
 ro.hwui.texture_cache_size=64.0f
-ro.opengles.version=131072
 ro.sf.disable_triple_buffer=1
 
 ## Logging
