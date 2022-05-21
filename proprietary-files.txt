@@ -32,29 +32,6 @@ vendor/lib/soundfx/libtreblebasswrapper.so
 vendor/lib/soundfx/libvirtualsurround.so
 #vendor/lib/soundfx/libvirtualx.so
 
-# Bluetooth
-vendor/etc/bluetooth/4343.hcd
-vendor/etc/bluetooth/auto_pairing.conf
-vendor/etc/bluetooth/BCM20702.hcd
-vendor/etc/bluetooth/BCM20703A2.hcd
-vendor/etc/bluetooth/BCM2076.hcd
-vendor/etc/bluetooth/bcm43241b4.hcd
-vendor/etc/bluetooth/BCM4330.hcd
-vendor/etc/bluetooth/bcm43341b0.hcd
-vendor/etc/bluetooth/bcm4335c0.hcd
-vendor/etc/bluetooth/BCM43430A1.hcd
-vendor/etc/bluetooth/BCM43430B0.hcd
-vendor/etc/bluetooth/BCM4345C0.hcd
-vendor/etc/bluetooth/BCM4345C5.hcd
-vendor/etc/bluetooth/BCM4350.hcd
-vendor/etc/bluetooth/BCM4354.hcd
-vendor/etc/bluetooth/bcm43569a2.hcd
-vendor/etc/bluetooth/BCM4359C0.hcd
-vendor/etc/bluetooth/BCM43751.hcd
-vendor/etc/bluetooth/blacklist.conf
-vendor/etc/bluetooth/bt_vendor.conf
-#vendor/lib/libbt-vendor.so
-
 # Camera
 vendor/lib/hw/camera.amlogic.so
 #vendor/lib/libispaaa.so
