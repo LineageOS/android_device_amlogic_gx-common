@@ -1,0 +1,16 @@
+### All blobs from this list, unless pinned and noted as otherwise,
+##  are from kvim-userdebug 9 PPR1.180610.011 20211022 test-keys.
+
+# GLES
+vendor/lib/egl/libGLES_mali.so
+
+# Gralloc
+vendor/lib/hw/gralloc.amlogic.so
+vendor/lib/libamgralloc_ext.so
+
+# Hardware Composer
+vendor/lib/hw/hwcomposer.amlogic.so
+
+# System Control
+vendor/etc/tvconfig/pq/pq.db
+vendor/etc/tvconfig/pq/pq_default.ini

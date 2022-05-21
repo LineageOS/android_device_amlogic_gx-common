@@ -43,6 +43,17 @@ if [ -s "${MY_DIR}/../../${VENDOR_DEVICE}/${DEVICE}/proprietary-files.txt" ]; th
     # The standard device blobs
     write_makefiles "${MY_DIR}/../../${VENDOR_DEVICE}/${DEVICE}/proprietary-files.txt" true
 
+    if [ "${TARGET_SOC}" == "gxbb" ]
+    then
+      write_makefiles "${MY_DIR}/../../${VENDOR_COMMON}/${DEVICE_COMMON}/proprietary-files-gxbb.txt" true
+    elif [ "${TARGET_SOC}" == "gxl" ]
+    then
+      write_makefiles "${MY_DIR}/../../${VENDOR_COMMON}/${DEVICE_COMMON}/proprietary-files-gxl.txt" true
+    elif [ "${TARGET_SOC}" == "gxm" ]
+    then
+      write_makefiles "${MY_DIR}/../../${VENDOR_COMMON}/${DEVICE_COMMON}/proprietary-files-gxm.txt" true
+    fi
+
     # Finish
     write_footers
 fi

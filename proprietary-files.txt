@@ -59,18 +59,10 @@ vendor/etc/bluetooth/bt_vendor.conf
 vendor/lib/hw/camera.amlogic.so
 #vendor/lib/libispaaa.so
 
-# EGL
-vendor/lib/egl/libGLES_mali.so
-
-# Gralloc
-vendor/lib/hw/gralloc.amlogic.so
-vendor/lib/libamgralloc_ext.so
-
 # Gatekeeper
 vendor/lib/hw/gatekeeper.amlogic.so
 
 # Hardware Composer
-vendor/lib/hw/hwcomposer.amlogic.so
 -vendor/lib/libge2d.so
 
 # HDMI-CEC
@@ -151,8 +143,6 @@ vendor/etc/init/systemcontrol.rc
 vendor/lib/libfbc.so
 vendor/lib/libpqcontrol.so
 vendor/lib/libsystemcontrolservice.so
-vendor/etc/tvconfig/pq/pq.db
-vendor/etc/tvconfig/pq/pq_default.ini
 
 # Thermal
 vendor/lib/hw/thermal.amlogic.so

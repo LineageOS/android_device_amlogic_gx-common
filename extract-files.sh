@@ -98,6 +98,17 @@ if [ -z "${ONLY_COMMON}" ] && [ -s "${MY_DIR}/../../${VENDOR_DEVICE}/${DEVICE}/p
     setup_vendor "${DEVICE}" "${VENDOR_DEVICE}" "${ANDROID_ROOT}" false "${CLEAN_VENDOR}"
 
     extract "${MY_DIR}/../../${VENDOR_DEVICE}/${DEVICE}/proprietary-files.txt" "${SRC}" "${KANG}" --section "${SECTION}"
+
+    if [ "${TARGET_SOC}" == "gxbb" ]
+    then
+      extract "${MY_DIR}/../../${VENDOR_COMMON}/${DEVICE_COMMON}/proprietary-files-gxbb.txt" "${SRC}" "${KANG}" --section "${SECTION}"
+    elif [ "${TARGET_SOC}" == "gxl" ]
+    then
+      extract "${MY_DIR}/../../${VENDOR_COMMON}/${DEVICE_COMMON}/proprietary-files-gxl.txt" "${SRC}" "${KANG}" --section "${SECTION}"
+    elif [ "${TARGET_SOC}" == "gxm" ]
+    then
+      extract "${MY_DIR}/../../${VENDOR_COMMON}/${DEVICE_COMMON}/proprietary-files-gxm.txt" "${SRC}" "${KANG}" --section "${SECTION}"
+    fi
 fi
 
 "${MY_DIR}/setup-makefiles.sh"
