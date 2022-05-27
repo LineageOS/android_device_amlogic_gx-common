@@ -6,7 +6,6 @@ vendor/lib/egl/libGLES_mali.so
 
 # Gralloc
 vendor/lib/hw/gralloc.amlogic.so
-vendor/lib/libamgralloc_ext.so
 
 # Hardware Composer
 vendor/lib/hw/hwcomposer.amlogic.so

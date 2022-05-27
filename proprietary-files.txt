@@ -39,6 +39,9 @@ vendor/lib/hw/camera.amlogic.so
 # Gatekeeper
 vendor/lib/hw/gatekeeper.amlogic.so
 
+# Gralloc
+vendor/lib/libamgralloc_ext.so
+
 # Hardware Composer
 -vendor/lib/libge2d.so
 
