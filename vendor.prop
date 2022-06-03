@@ -10,15 +10,6 @@ ro.config.ringtone=Ring_Synth_04.ogg
 ro.config.notification_sound=pixiedust.ogg
 ro.af.client_heap_size_kbyte=1536
 
-## Bluetooth
-bluetooth.enable_timeout_ms=11000
-config.disable_bluetooth=false
-persist.bluetooth.btsnoopenable=false
-persist.bluetooth.btsnooppath=/data/misc/bluedroid/btsnoop_hci.cfa
-persist.bluetooth.btsnoopsize=0xffff
-ro.autoconnectbt.isneed=false
-ro.autoconnectbt.nameprefix=Amlogic_RC
-
 ## Camera
 config.disable_cameraservice=true
 camera.disable_zsl_mode=1

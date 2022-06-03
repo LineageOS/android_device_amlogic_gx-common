@@ -31,16 +31,35 @@ PRODUCT_PACKAGES += \
     android.hardware.audio.effect@4.0-impl \
     android.hardware.soundtrigger@2.0-impl \
     android.hardware.soundtrigger@2.1-impl \
-    audio.a2dp.default \
-    audio.bluetooth.default \
     audio.hearing_aid.default \
     audio.r_submix.default \
     audio.usb.default
 
 ## Bluetooth
+ifeq ($(BOARD_HAVE_BLUETOOTH),true)
 PRODUCT_PACKAGES += \
     android.hardware.bluetooth@1.0-impl \
-    android.hardware.bluetooth@1.0-service
+    android.hardware.bluetooth@1.0-service \
+    audio.a2dp.default \
+    audio.bluetooth.default
+
+PRODUCT_PROPERTY_OVERRIDES += \
+    bluetooth.enable_timeout_ms=11000 \
+    config.disable_bluetooth=false \
+    persist.bluetooth.btsnoopenable=false \
+    persist.bluetooth.btsnooppath=/data/misc/bluedroid/btsnoop_hci.cfa \
+    persist.bluetooth.btsnoopsize=0xffff \
+    ro.vendor.autoconnectbt.isneed=false \
+    ro.vendor.autoconnectbt.nameprefix=Amlogic_RC \
+
+PRODUCT_COPY_FILES +=  \
+    frameworks/native/data/etc/android.hardware.bluetooth.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.bluetooth.xml \
+    frameworks/native/data/etc/android.hardware.bluetooth_le.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.bluetooth_le.xml
+
+else
+PRODUCT_PROPERTY_OVERRIDES += \
+    config.disable_bluetooth=true
+endif
 
 ## Boot animation
 TARGET_SCREEN_HEIGHT := 1080
@@ -157,8 +176,6 @@ PRODUCT_ENFORCE_RRO_TARGETS := *
 ## Permissions
 PRODUCT_COPY_FILES +=  \
     frameworks/native/data/etc/android.hardware.audio.output.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.audio.output.xml \
-    frameworks/native/data/etc/android.hardware.bluetooth.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.bluetooth.xml \
-    frameworks/native/data/etc/android.hardware.bluetooth_le.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.bluetooth_le.xml \
     frameworks/native/data/etc/android.hardware.ethernet.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.ethernet.xml \
     frameworks/native/data/etc/android.hardware.hdmi.cec.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.hdmi.cec.xml \
     frameworks/native/data/etc/android.hardware.location.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.location.xml \
