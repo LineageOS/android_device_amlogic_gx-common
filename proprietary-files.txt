@@ -23,14 +23,14 @@ vendor/lib/libnano.so
 # Audio Effects
 vendor/lib/soundfx/libavl.so
 vendor/lib/soundfx/libbalance.so
-#vendor/lib/soundfx/libdbx.so
-#vendor/lib/soundfx/libgeq.so
+vendor/lib/soundfx/libdbx.so
+vendor/lib/soundfx/libgeq.so
 vendor/lib/soundfx/libhpeqwrapper.so
-#vendor/lib/soundfx/libms12dapwrapper.so
+vendor/lib/soundfx/libms12dapwrapper.so
 vendor/lib/soundfx/libsrswrapper.so
 vendor/lib/soundfx/libtreblebasswrapper.so
 vendor/lib/soundfx/libvirtualsurround.so
-#vendor/lib/soundfx/libvirtualx.so
+vendor/lib/soundfx/libvirtualx.so
 
 # Camera
 vendor/lib/hw/camera.amlogic.so
