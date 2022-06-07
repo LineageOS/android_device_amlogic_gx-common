@@ -6,9 +6,6 @@
 
 ## Audio
 ro.audio.mapvalue=0,0,0,0
-ro.config.ringtone=Ring_Synth_04.ogg
-ro.config.notification_sound=pixiedust.ogg
-ro.af.client_heap_size_kbyte=1536
 
 ## Camera
 config.disable_cameraservice=true
@@ -29,10 +26,6 @@ dalvik.vm.heaptargetutilization=0.75
 dalvik.vm.heapminfree=512k
 dalvik.vm.heapmaxfree=8m
 ro.dalvik.vm.native.bridge=0
-
-## DRM
-drm.service.enable=true
-drm.service.enabled=1
 
 ## HDMI
 persist.sys.hdmi.keep_awake=false
@@ -67,7 +60,6 @@ ro.net.pppoe=true
 ro.vendor.platform.disable.audiorawout=false
 ro.vendor.platform.has.mbxuimode=true
 ro.vendor.platform.has.realoutputmode=true
-ro.vendor.platform.is.tv=0
 ro.vendor.platform.support.dolby=true
 ro.vendor.platform.support.dts=true
 
@@ -77,6 +69,3 @@ ro.radio.noril=false
 ## USB
 service.adb.tcp.port=5555
 vendor.usb.controller=c9100000.dwc2_a
-
-## Wi-Fi
-wifi.interface=wlan0
