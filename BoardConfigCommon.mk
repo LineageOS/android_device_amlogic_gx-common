@@ -116,6 +116,9 @@ TARGET_RECOVERY_PIXEL_FORMAT := "BGRA_8888"
 ## Releasetools
 TARGET_RELEASETOOLS_EXTENSIONS := $(COMMON_PATH)/releasetools
 
+## SELinux
+include device/amlogic/sepolicy/sepolicy.mk
+
 ## Vendor SPL
 VENDOR_SECURITY_PATCH := 2019-04-05
 
