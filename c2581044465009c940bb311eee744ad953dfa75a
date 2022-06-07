@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "3e6c34f3_ca80f77b",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 17162
+      },
+      "writtenOn": "2022-06-07T03:53:01Z",
+      "side": 1,
+      "message": "Isnt this will conflict with gxm devices wich need midgard?",
+      "revId": "c2581044465009c940bb311eee744ad953dfa75a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
