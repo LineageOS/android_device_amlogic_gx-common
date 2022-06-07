@@ -8,9 +8,6 @@ $(call inherit-product, vendor/amlogic/gx-common/gx-common-vendor.mk)
 
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 
-## AAPT
-PRODUCT_AAPT_PREF_CONFIG := tvdpi
-
 ## Audio
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/audio_effects.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects.xml \
@@ -64,9 +61,6 @@ endif
 TARGET_SCREEN_HEIGHT := 1080
 TARGET_SCREEN_WIDTH := 1920
 TARGET_BOOTANIMATION_HALF_RES := true
-
-## Characteristics
-PRODUCT_CHARACTERISTICS := tv
 
 ## Codecs
 PRODUCT_COPY_FILES += \
@@ -155,21 +149,10 @@ PRODUCT_PACKAGES += \
     android.hardware.light@2.0-service \
     android.hardware.light@2.0-impl
 
-## Logo
-PRODUCT_HOST_PACKAGES += \
-    res_packer
-
 ## Memtrack
 PRODUCT_PACKAGES += \
     android.hardware.memtrack@1.0-impl \
     android.hardware.memtrack@1.0-service
-
-## NRDP (Netflix)
-PRODUCT_COPY_FILES +=  \
-    $(LOCAL_PATH)/nrdp/nrdp.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/nrdp.xml \
-    $(LOCAL_PATH)/nrdp/nrdp_audio_platform_capabilities.json:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/nrdp_audio_platform_capabilities.json \
-    $(LOCAL_PATH)/nrdp/nrdp_audio_platform_capabilities_ms12.json:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/nrdp_audio_platform_capabilities_ms12.json \
-    $(LOCAL_PATH)/nrdp/nrdp_platform_capabilities.json:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/nrdp_platform_capabilities.json
 
 ## OMX
 PRODUCT_PACKAGES += \
@@ -246,3 +229,6 @@ PRODUCT_PACKAGES += \
     WifiOverlay \
     wpa_supplicant \
     wpa_supplicant.conf
+
+## Inherit from the main common tree product makefile
+$(call inherit-product, device/amlogic/common/amlogic.mk)
