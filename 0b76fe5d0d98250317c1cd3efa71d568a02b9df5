@@ -50,6 +50,23 @@
       "message": "If we\u0027re basically making vintf fragments, do we want to move these to a subfolder for vintf/?",
       "revId": "0b76fe5d0d98250317c1cd3efa71d568a02b9df5",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "aa2869ce_31e5bd69",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2022-06-09T16:35:42Z",
+      "side": 1,
+      "message": "Pretty sure that this needs the rework that Nolen did in the devices trees. BOARD_HAVE_BLUETOOTH must be set before inheriting common BoardConfig makefile.",
+      "revId": "0b76fe5d0d98250317c1cd3efa71d568a02b9df5",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
