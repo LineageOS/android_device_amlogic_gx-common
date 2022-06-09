@@ -67,7 +67,6 @@ TARGET_BOOTANIMATION_HALF_RES := true
 
 ## Characteristics
 PRODUCT_CHARACTERISTICS := tv
-PRODUCT_IS_ATV := true
 
 ## Codecs
 PRODUCT_COPY_FILES += \
