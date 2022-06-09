@@ -45,7 +45,6 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PROPERTY_OVERRIDES += \
     bluetooth.enable_timeout_ms=11000 \
-    config.disable_bluetooth=false \
     persist.bluetooth.btsnoopenable=false \
     persist.bluetooth.btsnooppath=/data/misc/bluedroid/btsnoop_hci.cfa \
     persist.bluetooth.btsnoopsize=0xffff \
