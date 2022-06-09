@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "58c4d2d0_2730250b",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 15346
+      },
+      "writtenOn": "2022-06-09T15:03:32Z",
+      "side": 1,
+      "message": "Should do this in new common tree, most of manifest is moved there",
+      "revId": "0b76fe5d0d98250317c1cd3efa71d568a02b9df5",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
