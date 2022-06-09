@@ -43,6 +43,9 @@ TARGET_SCREEN_DENSITY := 320
 ## HIDL
 DEVICE_MANIFEST_FILE := $(COMMON_PATH)/manifest.xml
 DEVICE_MATRIX_FILE := $(COMMON_PATH)/compatibility_matrix.xml
+ifeq ($(BOARD_HAVE_BLUETOOTH),true)
+DEVICE_MANIFEST_FILE += $(COMMON_PATH)/manifest_bt.xml
+endif
 
 ## Kernel
 BOARD_BOOTIMG_HEADER_VERSION := 2
