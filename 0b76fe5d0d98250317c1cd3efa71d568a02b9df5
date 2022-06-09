@@ -33,6 +33,23 @@
       "message": "I want to do this here to fix something that is wrong now. The new common tree is still not a thing. Can you validate the change?",
       "revId": "0b76fe5d0d98250317c1cd3efa71d568a02b9df5",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "a773f749_57a4d82a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2022-06-09T16:30:38Z",
+      "side": 1,
+      "message": "If we\u0027re basically making vintf fragments, do we want to move these to a subfolder for vintf/?",
+      "revId": "0b76fe5d0d98250317c1cd3efa71d568a02b9df5",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
