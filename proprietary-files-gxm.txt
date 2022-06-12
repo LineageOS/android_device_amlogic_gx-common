@@ -2,14 +2,14 @@
 ##  are from kvim2-userdebug 9 PPR1.180610.011 20200624 test-keys.
 
 # GLES
-vendor/lib/egl/libGLES_mali.so
+vendor/lib/egl/libGLES_mali.so|17b51f8c4b26993e4967bcf730a7e0402bccff79
 
 # Gralloc
-vendor/lib/hw/gralloc.amlogic.so
+vendor/lib/hw/gralloc.amlogic.so|f8325eefc16f1e55f8496300276f89ca132c2435
 
 # Hardware Composer
-vendor/lib/hw/hwcomposer.amlogic.so
+vendor/lib/hw/hwcomposer.amlogic.so|2cc84c1aa1e45bf5a53960bc1deb3d3d27a54887|8fba53f9612d3a75215bc5989bb65eaeeef58517
 
 # System Control
-vendor/etc/tvconfig/pq/pq.db
-vendor/etc/tvconfig/pq/pq_default.ini
+vendor/etc/tvconfig/pq/pq.db|14269da48ac0a1c5bfaa9e5fa45f1eb9e75ac8b1
+vendor/etc/tvconfig/pq/pq_default.ini|5b19f73245bcff395a2f565088010614b31f5fb3
