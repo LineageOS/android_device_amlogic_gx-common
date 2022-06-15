@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "a19da3b7_1b6ab5fb",
+        "filename": "BoardConfigCommon.mk",
+        "patchSetId": 3
+      },
+      "lineNbr": 45,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2022-06-15T02:29:07Z",
+      "side": 1,
+      "message": "why not just drop this above the if and have it just be:\n\nifneq ($(BOARD_HAVE_BLUETOOTH),false)\nDEVICE_MANIFEST_FILE +\u003d $(COMMON_PATH)/manifest_bt.xml\nendif\n\nSimplifies things",
+      "range": {
+        "startLine": 45,
+        "startChar": 0,
+        "endLine": 45,
+        "endChar": 51
+      },
+      "revId": "1ef255a4ee81d8d2a1e5dfe1422f2b685026a57b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
