@@ -22,6 +22,30 @@
       },
       "revId": "1ef255a4ee81d8d2a1e5dfe1422f2b685026a57b",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "a2bbcbd7_c89de754",
+        "filename": "BoardConfigCommon.mk",
+        "patchSetId": 3
+      },
+      "lineNbr": 45,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2022-06-23T11:42:22Z",
+      "side": 1,
+      "message": "It seems to simplify things, but as you know already we have that issue with BOARD_HAVE_BLUETOOTH not being set at this point. With this change as is, you\u0027d only need https://review.lineageos.org/c/LineageOS/android_device_hardkernel_odroidc4/+/332642.",
+      "parentUuid": "a19da3b7_1b6ab5fb",
+      "range": {
+        "startLine": 45,
+        "startChar": 0,
+        "endLine": 45,
+        "endChar": 51
+      },
+      "revId": "1ef255a4ee81d8d2a1e5dfe1422f2b685026a57b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
