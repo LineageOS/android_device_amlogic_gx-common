@@ -46,6 +46,30 @@
       },
       "revId": "1ef255a4ee81d8d2a1e5dfe1422f2b685026a57b",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "e9e0283a_48772166",
+        "filename": "BoardConfigCommon.mk",
+        "patchSetId": 3
+      },
+      "lineNbr": 45,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2022-06-24T20:40:16Z",
+      "side": 1,
+      "message": "struggling to understand here - we moved it to product.mk to work around this?\n\nWhether we go with the existing duplicated logic or the logic I proposed, it should still check BOARD_HAVE_BLUETOOTH for if it\u0027s false, and if it isn\u0027t false it will include the manifest. My proposal doesn\u0027t change anything related to inherit cane order and still needs the commit you linked.",
+      "parentUuid": "a2bbcbd7_c89de754",
+      "range": {
+        "startLine": 45,
+        "startChar": 0,
+        "endLine": 45,
+        "endChar": 51
+      },
+      "revId": "1ef255a4ee81d8d2a1e5dfe1422f2b685026a57b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
