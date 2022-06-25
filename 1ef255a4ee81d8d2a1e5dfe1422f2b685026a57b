@@ -94,6 +94,30 @@
       },
       "revId": "1ef255a4ee81d8d2a1e5dfe1422f2b685026a57b",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "b4e964a1_12f07c3f",
+        "filename": "BoardConfigCommon.mk",
+        "patchSetId": 3
+      },
+      "lineNbr": 45,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2022-06-25T22:45:39Z",
+      "side": 1,
+      "message": "We did not move this flag to product.mk. In some cases it\u0027s set there, but not on all targets. The less intrusive is setting it only for odroidc4.\n\nAs for what you propose, it would 100% work only if the flag was set in product.mk.",
+      "parentUuid": "050f0465_c3ed71a0",
+      "range": {
+        "startLine": 45,
+        "startChar": 0,
+        "endLine": 45,
+        "endChar": 51
+      },
+      "revId": "1ef255a4ee81d8d2a1e5dfe1422f2b685026a57b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
