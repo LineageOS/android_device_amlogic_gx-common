@@ -35,6 +35,23 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "4005bfb6_a8b9022e",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2022-07-01T18:00:13Z",
+      "side": 1,
+      "message": "k, checked it, if I set BOARD_HAVE_BLUETOOTH to false in product.mk on beast, we get no manifest_bt included, if I set it to true in BoardConfig.mk (which is what other devices do atm), it still gets included.",
+      "revId": "1ef255a4ee81d8d2a1e5dfe1422f2b685026a57b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "a19da3b7_1b6ab5fb",
