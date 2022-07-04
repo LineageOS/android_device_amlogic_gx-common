@@ -4,8 +4,6 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-$(call inherit-product, vendor/amlogic/gx-common/gx-common-vendor.mk)
-
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 
 ## Audio
@@ -231,3 +229,6 @@ PRODUCT_PACKAGES += \
 
 ## Inherit from the main common tree product makefile
 $(call inherit-product, device/amlogic/common/amlogic.mk)
+
+## Inherit from the common proprietary files makefile
+$(call inherit-product, vendor/amlogic/gx-common/gx-common-vendor.mk)
