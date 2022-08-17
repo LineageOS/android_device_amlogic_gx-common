@@ -119,6 +119,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     vibrator.default
 
+# VNDK
+PRODUCT_PACKAGES += \
+    libutils-v32
+
 ## Inherit from the main common tree product makefile
 $(call inherit-product, device/amlogic/common/amlogic.mk)
 
