@@ -71,16 +71,16 @@ function blob_fixup() {
              echo "driver_param=use_p2p_group_interface=1">>"${2}"
              ;;
         vendor/lib/libOmxVideo.so)
-             "${PATCHELF}" --add-needed "libaml_symbols.so" "${2}"
+             grep -q "libaml_symbols.so" "${2}" || "${PATCHELF}" --add-needed "libaml_symbols.so" "${2}"
              ;;
         vendor/lib/libOmxBase.so)
-             "${PATCHELF}" --add-needed "libaml_symbols.so" "${2}"
+             grep -q "libaml_symbols.so" "${2}" || "${PATCHELF}" --add-needed "libaml_symbols.so" "${2}"
              ;;
         vendor/lib/hw/camera.amlogic.so)
-             "${PATCHELF}" --add-needed "libaml_symbols.so" "${2}"
+             grep -q "libaml_symbols.so" "${2}" || "${PATCHELF}" --add-needed "libaml_symbols.so" "${2}"
              ;;
         vendor/lib/hw/hwcomposer.amlogic.so)
-             "${PATCHELF}" --add-needed "libaml_symbols.so" "${2}"
+             grep -q "libaml_symbols.so" "${2}" || "${PATCHELF}" --add-needed "libaml_symbols.so" "${2}"
              ;;
         vendor/lib/libOmxCoreSw.so)
              "${PATCHELF}" --add-needed "libstagefright_softomx.so" "${2}"
