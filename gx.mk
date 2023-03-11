@@ -97,6 +97,10 @@ PRODUCT_PACKAGES += \
     android.hardware.power@1.0-service \
     power.default
 
+## Privleged App Permissions
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/permissions/privapp_allowlist_com.droidlogic.tv.settings.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp_allowlist_com.droidlogic.tv.settings.xml
+
 ## Protobuf
 PRODUCT_PACKAGES += \
     libprotobuf-cpp-lite-vendorcompat
