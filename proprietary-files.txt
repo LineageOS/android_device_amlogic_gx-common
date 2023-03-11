@@ -67,6 +67,7 @@ vendor/lib/vendor.amlogic.hardware.systemcontrol@1.1.so:lib/vendor.amlogic.hardw
 vendor/lib/vendor.amlogic.hardware.tvserver@1.0.so
 
 # Java
+-priv-app/DroidTvSettings/DroidTvSettings.apk
 vendor/framework/droidlogic.jar
 vendor/framework/droidlogic-tv.jar
 -product/priv-app/droidlogic-res/droidlogic-res.apk

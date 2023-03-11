@@ -89,6 +89,10 @@ PRODUCT_COPY_FILES +=  \
     frameworks/native/data/etc/android.software.opengles.deqp.level-2020-03-01.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.opengles.deqp.level.xml \
     frameworks/native/data/etc/android.software.vulkan.deqp.level-2020-03-01.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.vulkan.deqp.level.xml
 
+## Permissions privapp
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/permissions/privapp_allowlist_com.droidlogic.tv.settings.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp_allowlist_com.droidlogic.tv.settings.xml
+
 ## Platform
 TARGET_AMLOGIC_SOC ?= gxl
 
