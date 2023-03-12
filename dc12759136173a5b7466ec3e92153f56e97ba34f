@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "48edd010_a9d96b50",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2023-03-12T03:46:14Z",
+      "side": 1,
+      "message": "against this one as it sits - I want to pull it into TvSettings as either:\n- Native settings\n- DeviceSettings\n\nI\u0027ll talk to Timi about devicesettings plugins.",
+      "revId": "dc12759136173a5b7466ec3e92153f56e97ba34f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
