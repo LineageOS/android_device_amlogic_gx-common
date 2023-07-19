@@ -10,7 +10,7 @@ COMMON_PATH := device/amlogic/gx-common
 BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
 
 ## HIDL
-DEVICE_MANIFEST_FILE := $(COMMON_PATH)/manifest.xml
+DEVICE_MANIFEST_FILE += $(COMMON_PATH)/manifest.xml
 
 ## Kernel
 BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
