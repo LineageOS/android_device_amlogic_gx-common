@@ -22,27 +22,12 @@ def AddImage(info, folder, basename, dest):
   common.ZipWriteStr(info.output_zip, name, data)
   info.script.AppendExtra('package_extract_file("%s", "%s");' % (name, dest))
 
-def AddDtbImage(info, folder, basename):
-  name = basename
-  data = info.input_zip.read(folder + basename)
-  common.ZipWriteStr(info.output_zip, name, data)
-  info.script.AppendExtra('package_extract_file("%s", "/tmp/dtb.img");' % name);
-  info.script.AppendExtra('run_program("/system/bin/dd", "if=/tmp/dtb.img", "of=/dev/dtb", "bs=1k", "count=256");');
-
 def PrintInfo(info, dest):
   info.script.Print("Patching {} image unconditionally...".format(dest.split('/')[-1]))
 
 def OTA_InstallEnd(info):
-  PrintInfo(info, "/dev/block/dtbo")
-  AddImage(info, "IMAGES/", "dtbo.img", "/dev/block/dtbo")
   PrintInfo(info, "/dev/block/vbmeta")
   AddImage(info, "IMAGES/", "vbmeta.img", "/dev/block/vbmeta")
-  if 'RADIO/dtb.img' in info.input_zip.namelist():
-    PrintInfo(info, "/dev/dtb")
-    AddDtbImage(info, "RADIO/", "dtb.img")
-  if 'RADIO/logo.img' in info.input_zip.namelist():
-    PrintInfo(info, "/dev/block/logo")
-    AddImage(info, "RADIO/", "logo.img", "/dev/block/logo")
   if 'RADIO/bootloader.img' in info.input_zip.namelist():
     PrintInfo(info, "/dev/block/bootloader")
     AddImage(info, "RADIO/", "bootloader.img", "/dev/block/bootloader")
