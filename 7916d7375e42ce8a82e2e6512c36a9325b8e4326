@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "5ccf2523_b70abd7b",
+        "filename": "manifest.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 117,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2023-08-30T15:13:24Z",
+      "side": 1,
+      "message": "Remove",
+      "range": {
+        "startLine": 117,
+        "startChar": 8,
+        "endLine": 117,
+        "endChar": 47
+      },
+      "revId": "7916d7375e42ce8a82e2e6512c36a9325b8e4326",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
