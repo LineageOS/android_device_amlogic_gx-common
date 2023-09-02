@@ -13,6 +13,7 @@ BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
 DEVICE_MANIFEST_FILE += $(COMMON_PATH)/manifest.xml
 
 ## Kernel
+BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 TARGET_KERNEL_CLANG_COMPILE := false
 TARGET_KERNEL_CONFIG := meson64_defconfig
 TARGET_KERNEL_SOURCE := kernel/amlogic/linux-4.9-pie
