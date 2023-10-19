@@ -128,7 +128,8 @@ PRODUCT_PACKAGES += \
 
 ## Widevine DRM
 PRODUCT_PACKAGES += \
-    android.hardware.drm@1.1.vendor
+    android.hardware.drm@1.1.vendor \
+    libprotobuf-cpp-lite-3.9.1-vendorcompat
 
 ## Inherit from the main common tree product makefile
 $(call inherit-product, device/amlogic/common/amlogic.mk)
