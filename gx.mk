@@ -125,6 +125,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libutils-v32
 
+## Widevine DRM
+PRODUCT_PACKAGES += \
+    android.hardware.drm@1.1.vendor
+
 ## Inherit from the main common tree product makefile
 $(call inherit-product, device/amlogic/common/amlogic.mk)
 
