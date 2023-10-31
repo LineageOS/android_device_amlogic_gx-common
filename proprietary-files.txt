@@ -118,6 +118,7 @@ vendor/etc/seccomp_policy/mediacodec.policy
 vendor/etc/seccomp_policy/mediaextractor.policy
 
 # System Control
+recovery/root/system/bin/systemcontrol_static|d14c0e72d2020af4b4121891edd7e35c54082d3c
 vendor/bin/systemcontrol
 vendor/etc/init/systemcontrol.rc
 vendor/lib/libfbc.so
