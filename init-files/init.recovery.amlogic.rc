@@ -57,7 +57,7 @@ service remotecfg2 /sbin/remotecfg -c /sbin/remote.cfg -t /sbin/remote.tab2 -d
     oneshot
     seclabel u:r:recovery:s0
 
-service systemcontrol /sbin/systemcontrol_static /sbin/mesondisplay.cfg
+service systemcontrol /system/bin/systemcontrol_static /system/etc/mesondisplay.cfg
     oneshot
     seclabel u:r:recovery:s0
 
@@ -254,10 +254,6 @@ on property:sys.usb.config=adb && property:sys.usb.configfs=0
     write /sys/class/android_usb/android0/enable 1
     start adbd
     setprop sys.usb.state ${sys.usb.config}
-
-service systemcontrol /system/bin/systemcontrol_static /system/etc/mesondisplay.cfg
-    oneshot
-    seclabel u:r:recovery:s0
 
 # USB accessory configuration
 on property:sys.usb.config=accessory && property:sys.usb.configfs=0
