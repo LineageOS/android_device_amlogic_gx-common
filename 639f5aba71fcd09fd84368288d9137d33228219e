@@ -46,6 +46,30 @@
       },
       "revId": "639f5aba71fcd09fd84368288d9137d33228219e",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "4df15863_7764f1c6",
+        "filename": "init-files/init.recovery.amlogic.rc",
+        "patchSetId": 1
+      },
+      "lineNbr": 62,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2023-11-01T12:55:40Z",
+      "side": 1,
+      "message": "Don\u0027t insta merge next time. I missed the derp for just a few minutes.",
+      "parentUuid": "be746cd5_7271c13c",
+      "range": {
+        "startLine": 60,
+        "startChar": 0,
+        "endLine": 62,
+        "endChar": 28
+      },
+      "revId": "639f5aba71fcd09fd84368288d9137d33228219e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ],
   "submitRequirementResults": []
