@@ -1,5 +1,5 @@
-### All blobs from this list, unless pinned and noted as otherwise,
-##  are from adt2-user 9 PTT5.190307.001 5360859 dev-keys.
+## All blobs from this list, unless pinned and noted as otherwise,
+## are from adt2-user 9 PTT5.190307.001 5360859 dev-keys.
 
 ## TEE
 vendor/bin/tee-supplicant|2c3c677d5880817be2e34d8cc971f587284afd1d
