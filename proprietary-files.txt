@@ -1,5 +1,5 @@
-### All blobs from this list, unless pinned and noted as otherwise,
-##  are from kvim-userdebug 9 PPR1.180610.011 20211022 test-keys.
+## All blobs from this list, unless pinned and noted as otherwise,
+## are from kvim-userdebug 9 PPR1.180610.011 20211022 test-keys.
 
 # Audio
 product/lib/libamavutils.so

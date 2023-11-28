@@ -1,5 +1,5 @@
-### All blobs from this list, unless pinned and noted as otherwise,
-##  are from kvim2-userdebug 9 PPR1.180610.011 20200624 test-keys.
+## All blobs from this list, unless pinned and noted as otherwise,
+## are from kvim2-userdebug 9 PPR1.180610.011 20200624 test-keys.
 
 # GLES
 vendor/lib/egl/libGLES_mali.so|17b51f8c4b26993e4967bcf730a7e0402bccff79
