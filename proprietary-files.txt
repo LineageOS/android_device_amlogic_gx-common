@@ -3,8 +3,8 @@
 
 # Audio
 product/lib/libamavutils.so
-vendor/etc/init/init.hbg.remote.rc
 vendor/etc/audio_effects.conf
+vendor/etc/init/init.hbg.remote.rc
 vendor/etc/remote.txt
 vendor/lib/hw/audio.primary.amlogic.so
 vendor/lib/libam_adp.so
@@ -33,8 +33,8 @@ vendor/lib/soundfx/libvirtualsurround.so
 vendor/lib/soundfx/libvirtualx.so
 
 # Camera
-vendor/lib/hw/camera.amlogic.so
 #vendor/lib/libispaaa.so
+vendor/lib/hw/camera.amlogic.so
 
 # Gatekeeper
 vendor/lib/hw/gatekeeper.amlogic.so
@@ -61,48 +61,48 @@ vendor/lib/vendor.amlogic.hardware.miracast_hdcp2@1.0.so
 vendor/lib/vendor.amlogic.hardware.remotecontrol@1.0.so
 vendor/lib/vendor.amlogic.hardware.screencontrol@1.0.so
 vendor/lib/vendor.amlogic.hardware.systemcontrol@1.0.so
-vendor/lib/vendor.amlogic.hardware.systemcontrol@1.1.so
 vendor/lib/vendor.amlogic.hardware.systemcontrol@1.0.so:lib/vendor.amlogic.hardware.systemcontrol@1.0.so
+vendor/lib/vendor.amlogic.hardware.systemcontrol@1.1.so
 vendor/lib/vendor.amlogic.hardware.systemcontrol@1.1.so:lib/vendor.amlogic.hardware.systemcontrol@1.1.so
 vendor/lib/vendor.amlogic.hardware.tvserver@1.0.so
 
 # Java
-vendor/framework/droidlogic.jar
-vendor/framework/droidlogic-tv.jar
 product/priv-app/droidlogic-res/droidlogic-res.apk
-vendor/lib/libremotecontrol_jni.so
-vendor/lib/libsystemcontrol_jni.so
-vendor/lib/libsystemcontrol_jni.so:lib/libsystemcontrol_jni.so
-vendor/lib/libdisplaysetting.so
 vendor/etc/permissions/droidlogic.software.core.xml:product/etc/permissions/droidlogic.software.core.xml
 vendor/etc/permissions/droidlogic.tv.software.core.xml
+vendor/framework/droidlogic-tv.jar
+vendor/framework/droidlogic.jar
+vendor/lib/libdisplaysetting.so
+vendor/lib/libremotecontrol_jni.so
 vendor/lib/libremotecontrolserver.so
-vendor/lib/libsystemcontrolclient.so:lib/libsystemcontrolclient.so
+vendor/lib/libsystemcontrol_jni.so
+vendor/lib/libsystemcontrol_jni.so:lib/libsystemcontrol_jni.so
 vendor/lib/libsystemcontrolclient.so
+vendor/lib/libsystemcontrolclient.so:lib/libsystemcontrolclient.so
 
 # Memtrack
 vendor/lib/hw/memtrack.amlogic.so
 
 # OMX
-vendor/lib/libdatachunkqueue_alt.so
 #vendor/lib/libdolbyms12.so
-vendor/lib/libdra.so
-vendor/lib/libfpscalculator_alt.so
+#vendor/lib/libms12dap.so
+#vendor/lib/libstagefright_soft_xaacdec.so
 vendor/lib/libHwAudio_dcvdec.so
 vendor/lib/libHwAudio_dtshd.so
-#vendor/lib/libms12dap.so
 vendor/lib/libOmxAudio.so
+vendor/lib/libOmxBase.so
+vendor/lib/libOmxCore.so
+vendor/lib/libOmxCoreSw.so
+vendor/lib/libOmxVideo.so
+vendor/lib/libdatachunkqueue_alt.so
+vendor/lib/libdra.so
+vendor/lib/libfpscalculator_alt.so
 vendor/lib/libomx_av_core_alt.so
 vendor/lib/libomx_clock_utils_alt.so
 vendor/lib/libomx_framework_alt.so
 vendor/lib/libomx_timed_task_queue_alt.so
 vendor/lib/libomx_worker_peer_alt.so
-vendor/lib/libOmxBase.so
-vendor/lib/libOmxCore.so
-vendor/lib/libOmxCoreSw.so
-vendor/lib/libOmxVideo.so
 vendor/lib/libstagefright_soft_amsoftdec.so
-#vendor/lib/libstagefright_soft_xaacdec.so
 vendor/lib/libstagefrighthw.so
 vendor/lib/libthreadworker_alt.so
 
