@@ -73,11 +73,8 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/init-files/init.amlogic.usb.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.amlogic.usb.rc \
     $(LOCAL_PATH)/init-files/init.recovery.amlogic.rc:recovery/root/init.recovery.amlogic.rc
 
-## Kernel Modules
 PRODUCT_PACKAGES += \
-    mali \
-    media \
-    optee-module
+    fstab.amlogic
 
 ## Keymaster
 PRODUCT_PACKAGES += \

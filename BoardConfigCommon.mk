@@ -13,11 +13,20 @@ DEVICE_MANIFEST_FILE += $(COMMON_PATH)/manifest.xml
 TARGET_KERNEL_CLANG_COMPILE := false
 TARGET_KERNEL_CONFIG ?= meson64_defconfig
 TARGET_KERNEL_SOURCE := kernel/amlogic/linux-4.9-pie
-TARGET_USES_P_MODULES ?= true
 
 ifeq ($(WITH_CONSOLE),true)
 BOARD_KERNEL_CMDLINE += console=ttyS0,115200 no_console_suspend ignore_loglevel
 endif
+
+## Kernel modules
+TARGET_KERNEL_EXT_MODULE_ROOT := kernel/amlogic/kernel-modules
+TARGET_KERNEL_EXT_MODULES += \
+    mali-driver/utgard \
+    media-pie \
+    optee-pie
+
+TARGET_MODULE_ALIASES += \
+    mali_kbase.ko:mali.ko
 
 ## Partitions
 SSI_PARTITIONS := system
