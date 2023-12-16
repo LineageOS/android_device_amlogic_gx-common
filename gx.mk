@@ -85,12 +85,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     fstab.amlogic
 
-## Kernel Modules
-PRODUCT_PACKAGES += \
-    mali \
-    media \
-    optee-module
-
 ## Keymaster
 PRODUCT_PACKAGES += \
     android.hardware.keymaster@3.0-service \
