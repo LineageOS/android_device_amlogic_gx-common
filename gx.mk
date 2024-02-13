@@ -69,13 +69,19 @@ PRODUCT_PACKAGES += \
 
 # Init-Files
 PRODUCT_COPY_FILES += \
+<<<<<<< HEAD   (cc1eaa gx: Ship full recovery image)
     $(LOCAL_PATH)/init-files/fstab.amlogic:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.amlogic \
+=======
+>>>>>>> CHANGE (11e3e4 gx: Make first stage init partitions, add no_avb variant)
     $(LOCAL_PATH)/init-files/init.amlogic.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.amlogic.rc \
     $(LOCAL_PATH)/init-files/init.amlogic.board.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.amlogic.board.rc \
     $(LOCAL_PATH)/init-files/init.amlogic.media.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.amlogic.media.rc \
     $(LOCAL_PATH)/init-files/init.amlogic.usb.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.amlogic.usb.rc \
     $(LOCAL_PATH)/init-files/init.recovery.amlogic.rc:recovery/root/init.recovery.amlogic.rc \
     $(LOCAL_PATH)/init-files/ueventd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/ueventd.rc
+
+PRODUCT_PACKAGES += \
+    fstab.amlogic
 
 ## Kernel Modules
 PRODUCT_PACKAGES += \
