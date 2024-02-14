@@ -91,10 +91,45 @@ function blob_fixup() {
         vendor/bin/systemcontrol)
             [ "$2" = "" ] && return 0
              "${PATCHELF}" --replace-needed "libutils.so" "libutils-v32.so" "${2}"
+             "${PATCHELF}" --replace-needed "libhidlbase.so" "libhidlbase_shim.so" "${2}"
              ;;
         vendor/bin/hdmicecd)
             [ "$2" = "" ] && return 0
              "${PATCHELF}" --replace-needed "libutils.so" "libutils-v32.so" "${2}"
+             "${PATCHELF}" --replace-needed "libhidlbase.so" "libhidlbase_shim.so" "${2}"
+             ;;
+        lib/vendor.amlogic.hardware.droidvold@1.0.so)
+             "${PATCHELF}" --replace-needed "libhidlbase.so" "libhidlbase_shim.so" "${2}"
+             ;;
+        lib/vendor.amlogic.hardware.systemcontrol@1.0.so)
+             "${PATCHELF}" --replace-needed "libhidlbase.so" "libhidlbase_shim.so" "${2}"
+             ;;
+        lib/vendor.amlogic.hardware.systemcontrol@1.1.so)
+             "${PATCHELF}" --replace-needed "libhidlbase.so" "libhidlbase_shim.so" "${2}"
+             ;;
+        vendor/lib/vendor.amlogic.hardware.droidvold@1.0.so)
+             "${PATCHELF}" --replace-needed "libhidlbase.so" "libhidlbase_shim.so" "${2}"
+             ;;
+        vendor/lib/vendor.amlogic.hardware.hdmicec@1.0.so)
+             "${PATCHELF}" --replace-needed "libhidlbase.so" "libhidlbase_shim.so" "${2}"
+             ;;
+        vendor/lib/vendor.amlogic.hardware.miracast_hdcp2@1.0.so)
+             "${PATCHELF}" --replace-needed "libhidlbase.so" "libhidlbase_shim.so" "${2}"
+             ;;
+        vendor/lib/vendor.amlogic.hardware.remotecontrol@1.0.so)
+             "${PATCHELF}" --replace-needed "libhidlbase.so" "libhidlbase_shim.so" "${2}"
+             ;;
+        vendor/lib/vendor.amlogic.hardware.screencontrol@1.0.so)
+             "${PATCHELF}" --replace-needed "libhidlbase.so" "libhidlbase_shim.so" "${2}"
+             ;;
+        vendor/lib/vendor.amlogic.hardware.systemcontrol@1.0.so)
+             "${PATCHELF}" --replace-needed "libhidlbase.so" "libhidlbase_shim.so" "${2}"
+             ;;
+        vendor/lib/vendor.amlogic.hardware.systemcontrol@1.1.so)
+             "${PATCHELF}" --replace-needed "libhidlbase.so" "libhidlbase_shim.so" "${2}"
+             ;;
+        vendor/lib/vendor.amlogic.hardware.tvserver@1.0.so)
+             "${PATCHELF}" --replace-needed "libhidlbase.so" "libhidlbase_shim.so" "${2}"
              ;;
         vendor/lib*/libwvhidl.so)
             [ "$2" = "" ] && return 0
