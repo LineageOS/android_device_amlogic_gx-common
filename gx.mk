@@ -129,7 +129,8 @@ PRODUCT_PACKAGES += \
 
 # VNDK
 PRODUCT_PACKAGES += \
-    libutils-v32
+    libutils-v32 \
+    libhidlbase_shim
 
 ## Widevine DRM
 PRODUCT_PACKAGES += \
