@@ -50,8 +50,6 @@ on fs
     restorecon_recursive /mnt/vendor/param
 
 on post-fs-data
-    #create droidota directory for system update
-    mkdir /data/droidota 0771 system system
     #save log
     mkdir /data/log 0771 log log
     mkdir /data/log/dontpanic 0771 log log
