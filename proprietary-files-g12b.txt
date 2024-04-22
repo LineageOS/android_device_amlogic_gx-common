@@ -1,0 +1,15 @@
+## All blobs from this list, unless pinned and noted as otherwise,
+## are from kvim3-userdebug 9 PPR1.180610.011 20231122 test-keys.
+
+# GLES
+vendor/lib/egl/libGLES_mali.so|bcad977e286a812ca9b024471f68a4682913c0be
+
+# Gralloc
+vendor/lib/hw/gralloc.amlogic.so|cd0a7ad09b26442b522bdfd8be8b652d5af5cc3e
+
+# Hardware Composer
+vendor/lib/hw/hwcomposer.amlogic.so|44d2afbb8f08eb89b6114d2a0e3d9737c9c67afe|d192f4ec4a867339f278ae72eff87f3c2a593f00
+
+# System Control
+vendor/etc/tvconfig/pq/pq.db|0b4e62f6a08b7c615f9318e6bb7c57ff1b62db9e
+vendor/etc/tvconfig/pq/pq_default.ini|1c40ba6443aeb7120bf892e9596aa992ad2c226f
