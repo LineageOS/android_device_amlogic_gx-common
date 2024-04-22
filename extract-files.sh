@@ -114,6 +114,9 @@ if [ -z "${ONLY_COMMON}" ] && [ -s "${MY_DIR}/../../${VENDOR}/${DEVICE}/propriet
     elif [ "${TARGET_SOC}" == "gxm" ]
     then
       extract "${MY_DIR}/../../${VENDOR_COMMON}/${DEVICE_COMMON}/proprietary-files-gxm.txt" "${SRC}" "${KANG}" --section "${SECTION}"
+    elif [ "${TARGET_SOC}" == "g12b" ]
+    then
+      extract "${MY_DIR}/../../${VENDOR_COMMON}/${DEVICE_COMMON}/proprietary-files-g12b.txt" "${SRC}" "${KANG}" --section "${SECTION}"
     fi
 fi
 
