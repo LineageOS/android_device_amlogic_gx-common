@@ -101,12 +101,19 @@ if [ -z "${ONLY_TARGET}" ]; then
     extract "${MY_DIR}/proprietary-files-tee.txt" "${SRC}" "${KANG}" --section "${SECTION}"
 fi
 
-if [ -z "${ONLY_COMMON}" ] && [ -s "${MY_DIR}/../../${VENDOR}/${DEVICE}/proprietary-files.txt" ]; then
+if [ -z "${ONLY_COMMON}" ] && [ -s "${MY_DIR}/../../${VENDOR_DEVICE}/${DEVICE}/proprietary-files.txt" ]; then
+echo test
     # Reinitialize the helper for device
-    source "${MY_DIR}/../../${VENDOR}/${DEVICE}/extract-files.sh"
-    setup_vendor "${DEVICE}" "${VENDOR}" "${ANDROID_ROOT}" false "${CLEAN_VENDOR}"
+    source "${MY_DIR}/../../${VENDOR_DEVICE}/${DEVICE}/extract-files.sh"
+    setup_vendor "${DEVICE}" "${VENDOR_DEVICE}" "${ANDROID_ROOT}" false "${CLEAN_VENDOR}"
 
+<<<<<<< HEAD   (7656c0 gx: Support super-legacy g12b devices)
     extract "${MY_DIR}/../../${VENDOR}/${DEVICE}/proprietary-files.txt" "${SRC}" "${KANG}" --section "${SECTION}"
+=======
+    if [ -z "${ONLY_FIRMWARE}" ]; then
+        extract "${MY_DIR}/../../${VENDOR_DEVICE}/${DEVICE}/proprietary-files.txt" "${SRC}" "${KANG}" --section "${SECTION}"
+    fi
+>>>>>>> CHANGE (88bcf4 gx: Fix device specific extraction)
 
     if [ "${TARGET_SOC}" == "gxl" ]
     then
@@ -118,6 +125,13 @@ if [ -z "${ONLY_COMMON}" ] && [ -s "${MY_DIR}/../../${VENDOR}/${DEVICE}/propriet
     then
       extract "${MY_DIR}/../../${VENDOR_COMMON}/${DEVICE_COMMON}/proprietary-files-g12b.txt" "${SRC}" "${KANG}" --section "${SECTION}"
     fi
+<<<<<<< HEAD   (7656c0 gx: Support super-legacy g12b devices)
+=======
+
+    if [ -f "${MY_DIR}/../../${VENDOR_DEVICE}/${DEVICE}/proprietary-firmware.txt" ]; then
+        extract_firmware "${MY_DIR}/../../${VENDOR_DEVICE}/${DEVICE}/proprietary-firmware.txt" "${SRC}"
+    fi
+>>>>>>> CHANGE (88bcf4 gx: Fix device specific extraction)
 fi
 
 "${MY_DIR}/setup-makefiles.sh"

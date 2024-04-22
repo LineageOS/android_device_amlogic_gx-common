@@ -40,15 +40,15 @@ printf '%s\n' 'endif' >> "$PRODUCTMK"
 # Finish
 write_footers
 
-if [ -s "${MY_DIR}/../../${VENDOR}/${DEVICE}/proprietary-files.txt" ]; then
+if [ -s "${MY_DIR}/../../${VENDOR_DEVICE}/${DEVICE}/proprietary-files.txt" ]; then
     # Reinitialize the helper for device
-    setup_vendor "${DEVICE}" "${VENDOR}" "${ANDROID_ROOT}" false
+    setup_vendor "${DEVICE}" "${VENDOR_DEVICE}" "${ANDROID_ROOT}" false
 
     # Warning headers and guards
     write_headers
 
     # The standard device blobs
-    write_makefiles "${MY_DIR}/../../${VENDOR}/${DEVICE}/proprietary-files.txt" true
+    write_makefiles "${MY_DIR}/../../${VENDOR_DEVICE}/${DEVICE}/proprietary-files.txt" true
 
     if [ "${TARGET_SOC}" == "gxl" ]
     then
@@ -61,6 +61,13 @@ if [ -s "${MY_DIR}/../../${VENDOR}/${DEVICE}/proprietary-files.txt" ]; then
       write_makefiles "${MY_DIR}/../../${VENDOR_COMMON}/${DEVICE_COMMON}/proprietary-files-g12b.txt" true
     fi
 
+<<<<<<< HEAD   (7656c0 gx: Support super-legacy g12b devices)
+=======
+    if [ -f "${MY_DIR}/../../${VENDOR_DEVICE}/${DEVICE}/proprietary-firmware.txt" ]; then
+        append_firmware_calls_to_makefiles "${MY_DIR}/../../${VENDOR_DEVICE}/${DEVICE}/proprietary-firmware.txt"
+    fi
+
+>>>>>>> CHANGE (88bcf4 gx: Fix device specific extraction)
     # Finish
     write_footers
 fi
