@@ -27,9 +27,12 @@ BOARD_ODMIMAGE_PARTITION_SIZE ?= 134217728
 BOARD_SYSTEMIMAGE_PARTITION_SIZE ?= 1342177280
 BOARD_VENDORIMAGE_PARTITION_SIZE ?= 268435456
 
+<<<<<<< HEAD   (619b03 gx: Allow some SOCs to fall back to gx tree)
 BOARD_BUILD_SYSTEM_ROOT_IMAGE := true
 BOARD_USES_FULL_RECOVERY_IMAGE := true
 
+=======
+>>>>>>> CHANGE (44f066 Revert "gx: Ship full recovery image")
 ## Properties
 TARGET_VENDOR_PROP += $(COMMON_PATH)/vendor.prop
 
