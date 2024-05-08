@@ -122,6 +122,7 @@ recovery/root/system/bin/systemcontrol_static|d14c0e72d2020af4b4121891edd7e35c54
 vendor/bin/systemcontrol
 vendor/etc/init/systemcontrol.rc
 vendor/lib/libfbc.so
+vendor/lib/liboptimization.so
 vendor/lib/libpqcontrol.so
 vendor/lib/libsystemcontrolservice.so
 
