@@ -19,6 +19,3 @@ ro.sf.disable_triple_buffer=1
 
 ## Media
 media.omx.display_mode=1
-
-## USB
-vendor.usb.controller=c9100000.dwc2_a
