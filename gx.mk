@@ -32,7 +32,6 @@ PRODUCT_COPY_FILES += \
 
 ifneq ($(PRODUCT_USE_SW_OMX),true)
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/media/media_codecs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs.xml \
     $(LOCAL_PATH)/media/media_codecs_performance.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance.xml
 endif
 
