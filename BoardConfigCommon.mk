@@ -17,6 +17,7 @@ TARGET_KERNEL_CLANG_COMPILE := false
 BOARD_KERNEL_CMDLINE += androidboot.boot_devices=d0074000.emmc
 TARGET_KERNEL_CONFIG ?= meson64_defconfig
 TARGET_KERNEL_SOURCE := kernel/amlogic/linux-4.9-pie
+TARGET_USES_P_MODULES ?= true
 
 ## Partitions
 CORE_PARTITIONS := system vendor
