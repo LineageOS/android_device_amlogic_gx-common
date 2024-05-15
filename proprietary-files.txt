@@ -36,6 +36,10 @@ vendor/lib/soundfx/libvirtualx.so
 #vendor/lib/libispaaa.so
 vendor/lib/hw/camera.amlogic.so
 
+# Dumpstate - from adt2-user 9 PTT5.190307.001 5360859 dev-keys
+vendor/bin/hw/android.hardware.dumpstate@1.0-service.droidlogic|354ef64d714a18f0a281b5c73ddbf2eb620b43ca
+vendor/etc/init/android.hardware.dumpstate@1.0-service.droidlogic.rc|c5bd6e60846390d282b7c531aeb6ed4edd6c31db
+
 # Gatekeeper
 vendor/lib/hw/gatekeeper.amlogic.so
 
