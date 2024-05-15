@@ -36,6 +36,10 @@ vendor/lib/soundfx/libvirtualx.so
 #vendor/lib/libispaaa.so
 vendor/lib/hw/camera.amlogic.so
 
+# Dumpstate
+vendor/bin/hw/android.hardware.dumpstate@1.0-service.droidlogic
+vendor/etc/init/android.hardware.dumpstate@1.0-service.droidlogic.rc
+
 # Gatekeeper
 vendor/lib/hw/gatekeeper.amlogic.so
 
