@@ -1,8 +1,6 @@
 import /vendor/etc/init/hw/init.amlogic.usb.rc
 
 on early-init
-    loglevel 3
-
     mount configfs configfs /sys/kernel/config
     #mount usbfs none /proc/bus/usb
 
