@@ -1,7 +1,6 @@
 import /vendor/etc/init/hw/init.amlogic.usb.rc
 import /vendor/etc/init/hw/init.amlogic.board.rc
 import /vendor/etc/init/hw/init.amlogic.media.rc
-import /vendor/etc/init/hw/init.mtk.rc
 import /vendor/etc/init/hw/init.amlogic.wifi_buildin.rc
 
 on early-init
@@ -50,7 +49,6 @@ on fs
     restorecon_recursive /mnt/vendor/param
 
 on post-fs-data
-    #save log
     mkdir /data/log 0771 log log
     mkdir /data/log/dontpanic 0771 log log
     mkdir /data/vendor/wifi 0770 wifi wifi
@@ -65,7 +63,7 @@ on boot
     chmod 0222 /sys/kernel/debug/tracing/trace_marker
     write /sys/kernel/debug/tracing/tracing_on 0
 
-    #bluetooth
+    # Bluetooth
     chown bluetooth bluetooth /sys/class/rfkill/rfkill0/state
     chown bluetooth bluetooth /sys/class/rfkill/rfkill0/type
     chmod 0660 /sys/class/rfkill/rfkill0/state
@@ -137,7 +135,7 @@ on boot
     chmod 0664  /sys/class/amaudio/debug
     chmod 0666 /dev/ilitek_ctrl
 
-# default support XBMC
+    # Default support XBMC
     chmod 666 /sys/class/video/axis
     chmod 666 /sys/class/video/screen_mode
     chmod 666 /sys/class/video/disable_video
@@ -162,7 +160,8 @@ on boot
     chmod 666 /dev/amstream_dves_avc
     chmod 666 /dev/amstream_dves_hevc
     chmod 666 /dev/ionvideo
-#add for XBMC BlueRay 3d and audio Passthrough
+
+    # XBMC BlueRay 3d and audio Passthrough
     chmod 666 /sys/class/audiodsp/digital_raw
     chmod 666 /sys/class/audiodsp/digital_codec
     chmod 666 /sys/class/ppmgr/ppmgr_3d_mode
@@ -340,11 +339,11 @@ on boot
     chmod 664 /sys/class/mpgpu/scale_mode
     chown system system /sys/class/mpgpu/mpgpucmd
     chmod 664 /sys/class/mpgpu/mpgpucmd
-    #power
+    # Power
     chmod 664 /sys/power/early_suspend_trigger
     chown root system /sys/power/early_suspend_trigger
 
-    #di detect 3D
+    # DI detect 3D
     chmod 664 /sys/module/di/parameters/det3d_en
     chmod 664 /sys/module/di/parameters/prog_proc_config
     chown root system /sys/module/di/parameters/det3d_en
@@ -353,79 +352,16 @@ on boot
     write /sys/class/vfm/map "rm default"
     write /sys/class/vfm/map "add default decoder ppmgr deinterlace amvideo"
 
-# virtual sdcard daemon running as media_rw (1023)
-#service sdcard /system/bin/sdcard -u 1023 -g 1023 /data/media /mnt/shell/emulated
-#   class late_start
-
-service fuse_sdcard1 /system/bin/sdcard -u 1023 -g 1023 /mnt/media_rw/sdcard1 /storage/sdcard1
-    class late_start
-    disabled
-
-service fuse_udisk0 /system/bin/sdcard -u 1023 -g 1023 /mnt/media_rw/udisk0 /storage/udisk0
-    class late_start
-    disabled
-
-service fuse_udisk1 /system/bin/sdcard -u 1023 -g 1023 /mnt/media_rw/udisk1 /storage/udisk1
-    class late_start
-    disabled
-
-service fuse_sr0 /system/bin/sdcard -u 1023 -g 1023 /mnt/media_rw/sr0 /storage/sr0
-    class late_start
-    disabled
-
-service fuse_loop /system/bin/sdcard -u 1023 -g 1023 /mnt/media_rw/loop /storage/loop
-    class late_start
-    disabled
-
-# Set watchdog timer to 30 seconds and pet it every 10 seconds to get a 20 second margin
-service watchdogd /sbin/watchdogd 10 20
-    class core
-    disabled
-    seclabel u:r:watchdogd:s0
-
-
-# on userdebug and eng builds, enable kgdb on the serial console
-on property:ro.debuggable=1
-    write /sys/module/kgdboc/parameters/kgdboc ttyFIQ2
-    write /sys/module/fiq_debugger/parameters/kgdb_enable 1
-
 service remotecfg /vendor/bin/remotecfg /vendor/etc/remote.conf
     class main
     oneshot
     seclabel u:r:remotecfg:s0
-
-service bootvideo /vendor/bin/bootplayer /vendor/etc/bootvideo
-    class main
-    user root
-    group system
-    disabled
-    oneshot
 
 service hdcp_tx22 /vendor/bin/hdcp_tx22 \
     -f /vendor/etc/firmware/firmware.le
     class main
     disabled
     oneshot
-
-service hdcp_rx22 /vendor/bin/hdcp_rx22 \
-    -f /mnt/vendor/param/firmware.le
-    class main
-    disabled
-    oneshot
-    seclabel u:r:hdcp_rx22:s0
-
-#service ddrtest /vendor/bin/ddrtest.sh
-#    class main
-#    user root
-#    group root
-#    oneshot
-
-service factoryreset /vendor/bin/factoryreset.sh
-    class main
-    user root
-    group root
-    oneshot
-    seclabel u:r:install_recovery:s0
 
 service bugreport /system/bin/dumpstate -d -p -B -P -z \
     -o /data/user_de/0/com.android.shell/files/bugreports/bugreport
