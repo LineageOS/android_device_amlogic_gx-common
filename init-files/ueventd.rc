@@ -103,6 +103,13 @@
 
 /dev/otz_client           0666   drm        drm
 
+/dev/cec                  0666   system       system
+/dev/v4l2_frontend        0666   system       system
+/dev/opteearmtz00         0666   system       system
+/dev/tee0                 0666   system       system
+
+/dev/block/by-name/frp    0660   system       system
+
 #consumerir
 /dev/irblaster1           0660   system     system
 # DVB API device nodes
