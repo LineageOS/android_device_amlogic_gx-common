@@ -16,6 +16,10 @@ TARGET_KERNEL_CONFIG ?= meson64_defconfig
 TARGET_KERNEL_SOURCE := kernel/amlogic/linux-4.9-pie
 TARGET_USES_P_MODULES ?= true
 
+ifeq ($(WITH_CONSOLE),true)
+BOARD_KERNEL_CMDLINE += console=ttyS0,115200 no_console_suspend
+endif
+
 ## Partitions
 SSI_PARTITIONS := system
 TREBLE_PARTITIONS := odm vendor
