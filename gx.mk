@@ -28,12 +28,6 @@ TARGET_BOOTANIMATION_HALF_RES := true
 ## Codecs
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/media/media_profiles.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles.xml \
-    $(LOCAL_PATH)/media/media_profiles_V1_0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_V1_0.xml
-
-ifneq ($(PRODUCT_USE_SW_OMX),true)
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/media/media_codecs_performance.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance.xml
-endif
 
 ## DRM
 PRODUCT_PACKAGES += \
