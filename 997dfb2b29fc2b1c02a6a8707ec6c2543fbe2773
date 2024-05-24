@@ -1,0 +1,44 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "2d9a0907_a80f11f0",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 19390
+      },
+      "writtenOn": "2024-05-24T16:09:41Z",
+      "side": 1,
+      "message": "Wait for rebase",
+      "revId": "997dfb2b29fc2b1c02a6a8707ec6c2543fbe2773",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "84765965_e387a6c0",
+        "filename": "init-files/init.amlogic.rc",
+        "patchSetId": 1
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 19390
+      },
+      "writtenOn": "2024-05-24T16:09:41Z",
+      "side": 1,
+      "message": "Wait for rebase",
+      "range": {
+        "startLine": 13,
+        "startChar": 4,
+        "endLine": 14,
+        "endChar": 62
+      },
+      "revId": "997dfb2b29fc2b1c02a6a8707ec6c2543fbe2773",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
