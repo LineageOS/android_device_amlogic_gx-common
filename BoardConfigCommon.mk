@@ -38,6 +38,9 @@ TARGET_RECOVERY_FSTAB := $(COMMON_PATH)/init-files/recovery.fstab
 ## Releasetools
 TARGET_RELEASETOOLS_EXTENSIONS := $(COMMON_PATH)/releasetools
 
+## SELinux
+SELINUX_IGNORE_NEVERALLOWS := true
+
 ## Vendor SPL
 VENDOR_SECURITY_PATCH := 2019-04-05
 
