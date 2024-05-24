@@ -11,6 +11,7 @@ on init
     symlink /sdcard /mnt/sdcard
 
     symlink /dev/block/data /dev/block/by-name/mmcblk0p20
+    symlink /vendor/etc/remote.txt /data/vendor/HBG/remote.txt
 
     mkdir /factory
     chown system wifi /dev/wifi_power
