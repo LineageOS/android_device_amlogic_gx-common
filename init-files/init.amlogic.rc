@@ -11,6 +11,10 @@ on init
     symlink /sdcard /mnt/sdcard
 
     symlink /dev/block/data /dev/block/by-name/mmcblk0p20
+<<<<<<< PATCH SET (c1b29d init: symlink vendor's remote.txt in data)
+    symlink /vendor/etc/remote.txt /data/vendor/HBG/remote.txt
+=======
+>>>>>>> BASE      (9bd86d gx: init: Symlink data to mmcblk0p20)
 
     mkdir /factory
     chown system wifi /dev/wifi_power
