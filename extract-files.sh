@@ -102,7 +102,6 @@ if [ -z "${ONLY_TARGET}" ]; then
 fi
 
 if [ -z "${ONLY_COMMON}" ] && [ -s "${MY_DIR}/../../${VENDOR_DEVICE}/${DEVICE}/proprietary-files.txt" ]; then
-echo test
     # Reinitialize the helper for device
     source "${MY_DIR}/../../${VENDOR_DEVICE}/${DEVICE}/extract-files.sh"
     setup_vendor "${DEVICE}" "${VENDOR_DEVICE}" "${ANDROID_ROOT}" false "${CLEAN_VENDOR}"
