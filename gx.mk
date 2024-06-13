@@ -13,7 +13,8 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/mixer_paths.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths.xml
 
 PRODUCT_PACKAGES += \
-    android.hardware.soundtrigger@2.1-impl
+    android.hardware.soundtrigger@2.1-impl \
+    libaudioroute.vendor
 
 ## Bluetooth
 ifneq ($(BOARD_HAVE_BLUETOOTH),false)
@@ -24,6 +25,12 @@ endif
 
 ## Boot animation
 TARGET_BOOTANIMATION_HALF_RES := true
+
+## Camera
+PRODUCT_PACKAGES += \
+    libexif.vendor \
+    libjpeg.vendor \
+    libyuv.vendor
 
 ## Codecs
 PRODUCT_COPY_FILES += \
@@ -43,7 +50,10 @@ PRODUCT_PACKAGES += \
     android.hardware.graphics.allocator@2.0-service \
     android.hardware.graphics.composer@2.2-service \
     android.hardware.graphics.allocator@2.0-impl \
-    android.hardware.graphics.mapper@2.0-impl
+    android.hardware.graphics.mapper@2.0-impl \
+    libdmabufheap.vendor \
+    libion.vendor \
+    libutilscallstack.vendor
 
 PRODUCT_COPY_FILES +=  \
     frameworks/native/data/etc/android.software.opengles.deqp.level-2020-03-01.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.opengles.deqp.level.xml \
@@ -85,6 +95,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.keymaster@3.0-service \
     android.hardware.keymaster@3.0-impl \
+    libdumpstateutil.vendor
 
 ## OMX
 PRODUCT_PACKAGES += \
@@ -114,10 +125,15 @@ PRODUCT_PACKAGES += \
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
 
+## SystemControl
+PRODUCT_PACKAGES += \
+    libsqlite.vendor
+
 ## Thermal
 PRODUCT_PACKAGES += \
     android.hardware.thermal@1.0-service \
-    android.hardware.thermal@1.0-impl
+    android.hardware.thermal@1.0-impl \
+    libjsoncpp.vendor
 
 ## Vibrator
 PRODUCT_PACKAGES += \
