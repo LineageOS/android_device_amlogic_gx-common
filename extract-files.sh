@@ -70,20 +70,12 @@ function blob_fixup() {
         vendor/etc/wifi/wpa_supplicant_overlay.conf)
              echo "driver_param=use_p2p_group_interface=1">>"${2}"
              ;;
-        vendor/lib/libOmxVideo.so)
+        vendor/lib/libOmxCore.so|vendor/lib/libOmxVideo.so|vendor/lib/libOmxBase.so|vendor/lib/hw/camera.amlogic.so|vendor/lib/hw/hwcomposer.amlogic.so)
              grep -q "libaml_symbols.so" "${2}" || "${PATCHELF}" --add-needed "libaml_symbols.so" "${2}"
-             ;;
-        vendor/lib/libOmxBase.so)
-             grep -q "libaml_symbols.so" "${2}" || "${PATCHELF}" --add-needed "libaml_symbols.so" "${2}"
-             ;;
-        vendor/lib/hw/camera.amlogic.so)
-             grep -q "libaml_symbols.so" "${2}" || "${PATCHELF}" --add-needed "libaml_symbols.so" "${2}"
-             ;;
-        vendor/lib/hw/hwcomposer.amlogic.so)
-             grep -q "libaml_symbols.so" "${2}" || "${PATCHELF}" --add-needed "libaml_symbols.so" "${2}"
+             grep -q "libui_shim.so" "${2}" || "${PATCHELF}" --add-needed "libui_shim.so" "${2}"
              ;;
         vendor/lib/libOmxCoreSw.so)
-             "${PATCHELF}" --add-needed "libstagefright_softomx.so" "${2}"
+             grep -q "libstagefright_softomx.so" "${2}" || "${PATCHELF}" --add-needed "libstagefright_softomx.so" "${2}"
              ;;
         vendor/lib/hw/audio.primary.amlogic.so)
              "${PATCHELF}" --replace-needed "libutils.so" "libutils-v32.so" "${2}"
