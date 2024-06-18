@@ -8,7 +8,7 @@ vendor/lib/egl/libGLES_mali.so|c1bfa8a258024704d60e71f320bd9c0dbef3e348
 vendor/lib/hw/gralloc.amlogic.so|27b62b3df002f991df725dde672859b455767e94
 
 # Hardware Composer
-vendor/lib/hw/hwcomposer.amlogic.so|289fbcafc4e5b3fd56a1274d5489f359af078407|2e5aa5556561a6ea14d31d52cdf713a329e1149b
+vendor/lib/hw/hwcomposer.amlogic.so|289fbcafc4e5b3fd56a1274d5489f359af078407|abcccb600540a309a887d8fa480f30d71bf8fba7
 
 # System Control
 vendor/etc/tvconfig/pq/pq.db|893f9be50077a84a996aae9784f11626fb7d1fed
