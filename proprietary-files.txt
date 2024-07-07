@@ -110,10 +110,6 @@ vendor/lib/libstagefright_soft_amsoftdec.so
 vendor/lib/libstagefrighthw.so
 vendor/lib/libthreadworker_alt.so
 
-# OMX (Firmware)
-vendor/lib/firmware/video/h264_enc.bin
-vendor/lib/firmware/video/video_ucode.bin
-
 # Power
 vendor/lib/hw/power.amlogic.so
 
