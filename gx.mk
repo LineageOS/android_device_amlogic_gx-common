@@ -81,6 +81,16 @@ PRODUCT_PACKAGES += \
     android.hardware.keymaster@3.0-service \
     android.hardware.keymaster@3.0-impl \
 
+## Media firmware
+PRODUCT_COPY_FILES += \
+    kernel/amlogic/kernel-modules/media-pie/firmware/h264_enc.bin:$(TARGET_COPY_OUT_VENDOR)/lib/firmware/video/h264_enc.bin \
+    kernel/amlogic/kernel-modules/media-pie/firmware/video_ucode.bin:$(TARGET_COPY_OUT_VENDOR)/lib/firmware/video/video_ucode.bin
+
+## Media firmware
+PRODUCT_COPY_FILES += \
+    kernel/amlogic/kernel-modules/media-pie/firmware/h264_enc.bin:$(TARGET_COPY_OUT_VENDOR)/lib/firmware/video/h264_enc.bin \
+    kernel/amlogic/kernel-modules/media-pie/firmware/video_ucode.bin:$(TARGET_COPY_OUT_VENDOR)/lib/firmware/video/video_ucode.bin
+
 ## OMX
 PRODUCT_PACKAGES += \
     libavservices_minijail_vendor
