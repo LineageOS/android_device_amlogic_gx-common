@@ -63,10 +63,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/mesondisplay.cfg:$(TARGET_COPY_OUT_RECOVERY)/root/system/etc/mesondisplay.cfg \
     $(LOCAL_PATH)/configs/mesondisplay.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/mesondisplay.cfg
 
-## Health
-PRODUCT_PACKAGES += \
-    android.hardware.health@2.1-service
-
 # HIDL
 PRODUCT_PACKAGES += \
     libhidltransport \
