@@ -124,10 +124,6 @@ PRODUCT_PACKAGES += \
     android.hardware.thermal@1.0-service \
     android.hardware.thermal@1.0-impl
 
-## Vibrator
-PRODUCT_PACKAGES += \
-    vibrator.default
-
 # VNDK
 PRODUCT_PACKAGES += \
     libutils-v32
