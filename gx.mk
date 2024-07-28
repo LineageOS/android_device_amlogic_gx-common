@@ -130,10 +130,6 @@ PRODUCT_PACKAGES += \
     android.hardware.thermal@1.0-impl \
     libjsoncpp.vendor
 
-## Vibrator
-PRODUCT_PACKAGES += \
-    vibrator.default
-
 # VNDK
 PRODUCT_PACKAGES += \
     libutils-v32
