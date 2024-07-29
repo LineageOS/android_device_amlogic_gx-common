@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "dfdd98e1_c7c51c83",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2024-07-29T02:12:02Z",
+      "side": 1,
+      "message": "laugh all ya want, BUT:\n\n(original goal was 1:! with vendor image of beast, this is a dump of stock)\n\nnolenjohnson@ODS-PROD:~/dumps/google/beast$ find -name vibrator*\n./vendor/lib/hw/vibrator.default.so\n\nand it was linked by something we didn\u0027t end up copying lol",
+      "revId": "0bdb78d01d5146b8ef9b98b15aed4189bf5b3b97",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
