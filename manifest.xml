@@ -139,4 +139,5 @@
             <name>IRemoteControl</name>
             <instance>default</instance>
         </interface>
+    </hal>
 </manifest>
