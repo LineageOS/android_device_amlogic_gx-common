@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "6a1cf9ce_fbd69061",
+        "filename": "manifest.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 151,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2024-08-10T22:13:56Z",
+      "side": 0,
+      "message": "reeeeee ;)",
+      "revId": "1410a1a079a165f78b3835b6f2092b176a5ce648",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
