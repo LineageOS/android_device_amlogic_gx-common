@@ -94,8 +94,17 @@ function blob_fixup() {
             [ "$2" = "" ] && return 0
              "${PATCHELF}" --replace-needed "libutils.so" "libutils-v32.so" "${2}"
              ;;
-     esac
- }
+        *)
+            return 1
+            ;;
+    esac
+
+    return 0
+}
+
+function blob_fixup_dry() {
+    blob_fixup "$1" ""
+}
 
 if [ -z "${ONLY_FIRMWARE}" ] && [ -z "${ONLY_TARGET}" ]; then
     # Initialize the helper for common device
