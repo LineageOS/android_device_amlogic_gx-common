@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "71270f09_68a5c8da",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2024-10-23T19:58:51Z",
+      "side": 1,
+      "message": "Not sure if this is the proper commit. Aren\u0027t elfchecks now enabled by default?",
+      "revId": "525d4835c73044de86adb70c6ffe6d5e2d2c669c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
