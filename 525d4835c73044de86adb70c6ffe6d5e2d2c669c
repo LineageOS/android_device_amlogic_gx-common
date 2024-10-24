@@ -16,6 +16,24 @@
       "message": "Not sure if this is the proper commit. Aren\u0027t elfchecks now enabled by default?",
       "revId": "525d4835c73044de86adb70c6ffe6d5e2d2c669c",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c7a91762_5da7fb37",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2024-10-24T06:41:11Z",
+      "side": 1,
+      "message": "Correct, they are - gx is nowhere near ready for them. I pulled this from Luk\u0027s commit of the same change-id and content for nile: https://review.lineageos.org/c/LineageOS/android_device_sony_nile-common/+/406307",
+      "parentUuid": "71270f09_68a5c8da",
+      "revId": "525d4835c73044de86adb70c6ffe6d5e2d2c669c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
