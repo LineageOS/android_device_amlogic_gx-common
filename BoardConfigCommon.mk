@@ -21,15 +21,7 @@ ifeq ($(WITH_CONSOLE),true)
 BOARD_KERNEL_CMDLINE += console=ttyS0,115200 no_console_suspend ignore_loglevel
 endif
 
-## Kernel modules
 TARGET_KERNEL_EXT_MODULE_ROOT := kernel/amlogic/kernel-modules
-TARGET_KERNEL_EXT_MODULES += \
-    mali-driver/utgard \
-    media-pie \
-    optee-pie
-
-TARGET_MODULE_ALIASES += \
-    mali_kbase.ko:mali.ko
 
 ## Partitions
 SSI_PARTITIONS := system
@@ -52,6 +44,9 @@ TARGET_RELEASETOOLS_EXTENSIONS := $(COMMON_PATH)/releasetools
 
 ## SELinux
 SELINUX_IGNORE_NEVERALLOWS := true
+
+## SOC
+TARGET_USES_P_MODULES := true
 
 ## Vendor SPL
 VENDOR_SECURITY_PATCH := 2019-04-05
