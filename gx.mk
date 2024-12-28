@@ -133,7 +133,7 @@ PRODUCT_PACKAGES += \
 
 # VNDK
 PRODUCT_PACKAGES += \
-    libutils-v32
+    libutils-v32.vendor
 
 ## Widevine DRM
 PRODUCT_PACKAGES += \
