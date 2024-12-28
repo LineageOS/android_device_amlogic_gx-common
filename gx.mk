@@ -78,8 +78,16 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/init-files/init.amlogic.usb.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.amlogic.usb.rc \
     $(LOCAL_PATH)/init-files/init.recovery.amlogic.rc:recovery/root/init.recovery.amlogic.rc
 
+<<<<<<< HEAD   (efc8c9 gx: Allow ELF files in copy_files)
 PRODUCT_PACKAGES += \
     fstab.amlogic
+=======
+## Kernel Modules
+PRODUCT_PACKAGES += \
+    mali \
+    media \
+    optee-module
+>>>>>>> CHANGE (b5081e gx: Migrate back to Android.mk handling for kernel modules)
 
 ## Keymaster
 PRODUCT_PACKAGES += \
