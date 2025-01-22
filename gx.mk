@@ -119,8 +119,7 @@ PRODUCT_PACKAGES += \
 
 ## Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
-    $(LOCAL_PATH) \
-    bootable/deprecated-ota
+    $(LOCAL_PATH)
 
 ## SystemControl
 PRODUCT_PACKAGES += \
