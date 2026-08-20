@@ -3,7 +3,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-COMMON_PATH := device/amlogic/g12-common
+COMMON_PATH := device/amlogic/gx-common
 
 ## Architecture
 TARGET_CPU_VARIANT_RUNTIME := cortex-a53
@@ -15,13 +15,13 @@ BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
 ## Kernel
 BOARD_KERNEL_CMDLINE := androidboot.dynamic_partitions=true use_uvm=1
 ifeq ($(TARGET_BOOTDEVICE),usb)
-  BOARD_KERNEL_CMDLINE += androidboot.boot_devices=ff500000.dwc3
+  BOARD_KERNEL_CMDLINE += androidboot.boot_devices=c9000000.dwc3
 else ifeq ($(TARGET_BOOTDEVICE),sdcard)
-  BOARD_KERNEL_CMDLINE += androidboot.boot_devices=ffe05000.sd2
+  BOARD_KERNEL_CMDLINE += androidboot.boot_devices=d0072000.sd
 else
-  BOARD_KERNEL_CMDLINE += androidboot.boot_devices=ffe07000.emmc
+  BOARD_KERNEL_CMDLINE += androidboot.boot_devices=d0074000.emmc
 endif
-TARGET_KERNEL_CONFIG := g12a_defconfig
+TARGET_KERNEL_CONFIG := meson64_defconfig
 TARGET_KERNEL_SOURCE := kernel/amlogic/linux-4.9
 
 ifeq ($(WITH_CONSOLE),true)
@@ -32,16 +32,13 @@ endif
 ## Kernel modules
 TARGET_KERNEL_EXT_MODULE_ROOT := kernel/amlogic/kernel-modules
 TARGET_KERNEL_EXT_MODULES += \
-    mali-driver/bifrost \
+    mali-driver/utgard \
     media-4.9
 
 ifneq ($(TARGET_HAS_TEE),false)
 TARGET_KERNEL_EXT_MODULES += \
     optee
 endif
-
-TARGET_MODULE_ALIASES += \
-    mali_kbase.ko:mali.ko
 
 ## Partitions
 SSI_PARTITIONS := product system system_ext
@@ -58,7 +55,7 @@ TARGET_SYSTEM_PROP += $(COMMON_PATH)/system.prop
 TARGET_VENDOR_PROP += $(COMMON_PATH)/vendor.prop
 
 ## Recovery
-TARGET_RECOVERY_DEVICE_DIRS += vendor/amlogic/g12-common/proprietary
+TARGET_RECOVERY_DEVICE_DIRS += vendor/amlogic/gx-common/proprietary
 ifneq ($(strip $(TARGET_BOOTDEVICE)),)
   TARGET_RECOVERY_FSTAB := $(COMMON_PATH)/init/fstab.$(TARGET_BOOTDEVICE).amlogic
 else
@@ -72,10 +69,10 @@ TARGET_RELEASETOOLS_EXTENSIONS := $(COMMON_PATH)/releasetools
 AB_OTA_UPDATER := false
 
 ## Vendor SPL
-VENDOR_SECURITY_PATCH := 2024-07-01
+VENDOR_SECURITY_PATCH := 2019-04-05
 
 ## Include the main common tree BoardConfig makefile
 include device/amlogic/common/BoardConfigAmlogic.mk
 
 ## Include the common proprietary BoardConfig makefile
-include vendor/amlogic/g12-common/BoardConfigVendor.mk
+include vendor/amlogic/gx-common/BoardConfigVendor.mk
