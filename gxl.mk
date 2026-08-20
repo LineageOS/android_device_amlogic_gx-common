@@ -96,7 +96,7 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
 endif
 
 ## Partitions
-PRODUCT_USE_DYNAMIC_PARTITIONS := true
+PRODUCT_BUILD_SYSTEM_EXT_IMAGE := false
 $(call inherit-product, $(SRC_TARGET_DIR)/product/non_ab_device.mk)
 
 ## Platform

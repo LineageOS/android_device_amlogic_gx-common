@@ -88,7 +88,7 @@ vendor/lib/libamgralloc_ext.so
 vendor/lib/hw/hdmi_cec.amlogic.so
 
 ## Kernel Modules
-vendor/lib/modules/amlogic_fbc_lib.ko:vendor_dlkm/lib/modules/amlogic_fbc_lib.ko
+vendor/lib/modules/amlogic_fbc_lib.ko
 
 ## ICU
 vendor/lib/libicuuc_vendor.so
