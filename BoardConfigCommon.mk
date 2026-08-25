@@ -21,7 +21,7 @@ else ifeq ($(TARGET_BOOTDEVICE),sdcard)
 else
   BOARD_KERNEL_CMDLINE += androidboot.boot_devices=d0074000.emmc
 endif
-TARGET_KERNEL_CONFIG := meson64_defconfig
+TARGET_KERNEL_CONFIG := g12a_defconfig gxl.config
 TARGET_KERNEL_SOURCE := kernel/amlogic/linux-4.9
 
 ifeq ($(WITH_CONSOLE),true)
