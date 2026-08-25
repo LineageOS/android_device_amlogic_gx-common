@@ -10,6 +10,7 @@ on boot
     write /proc/sys/net/core/wmem_max 12582912
     write /proc/sys/net/core/rmem_default 2097152
     write /proc/sys/net/core/wmem_default 2097152
+    write /sys/module/decoder_common/parameters/max_di_instance 1
     write /sys/module/amvdec_mh264/parameters/reorder_dpb_size_margin 9
     write /sys/module/amvdec_h265/parameters/dynamic_buf_num_margin 9
-    write /sys/module/amvdec_vp9/parameters/max_buf_num 12
+    write /sys/module/amvdec_vp9/parameters/max_buf_num 18
