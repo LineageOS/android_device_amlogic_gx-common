@@ -43,6 +43,11 @@ blob_fixups: blob_fixups_user_type = {
     ): blob_fixup()
         .replace_needed('android.hardware.memtrack-V1-ndk_platform.so', 'android.hardware.memtrack-V1-ndk.so')
         .replace_needed('libbase.so', 'libbase-v33.so'),
+    (
+        'vendor/lib/hw/android.hardware.graphics.allocator@4.0-impl-arm.so',
+        'vendor/lib/hw/android.hardware.graphics.mapper@4.0-impl-arm.so'
+    ): blob_fixup()
+        .binary_regex_replace(b'ion-fb', b'fb_ion'),
 }  # fmt: skip
 
 module = ExtractUtilsModule(
