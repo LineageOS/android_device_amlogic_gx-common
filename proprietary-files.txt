@@ -76,6 +76,9 @@ vendor/etc/vintf/manifest/android.hardware.dumpstate@1.1-service.droidlogic.xml
 ## DVB
 vendor/lib/libam_adp.so
 
+## Firmware - from Xiaomi/oneday/oneday:12/STTC.230106.001/4560:user/release-keys
+vendor/lib/firmware/video/video_ucode.bin|e00b8fa3e777afb9c404537917d5ba727d2b7dc5
+
 ## Graphics - from HY300pro t950s_be311
 vendor/bin/hw/android.hardware.graphics.allocator@4.0-service
 vendor/etc/init/android.hardware.graphics.allocator@4.0-service.rc
@@ -95,8 +98,8 @@ vendor/lib/egl/libGLES_mali.so
 ## HDMI CEC
 vendor/lib/hw/hdmi_cec.amlogic.so
 
-## Kernel Modules
-vendor/lib/modules/amlogic_fbc_lib.ko
+## Kernel Modules - from Xiaomi/oneday/oneday:12/STTC.230106.001/4560:user/release-keys
+vendor/lib/modules/amlogic_fbc_lib.ko|d93f92216ce8eeaa29cdb07b262cf74f87829973
 
 ## ICU
 vendor/lib/libicuuc_vendor.so
