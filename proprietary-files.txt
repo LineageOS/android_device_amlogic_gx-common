@@ -80,20 +80,20 @@ vendor/lib/libam_adp.so
 vendor/lib/firmware/video/video_ucode.bin|e00b8fa3e777afb9c404537917d5ba727d2b7dc5
 
 ## Graphics - from HY300pro t950s_be311
-vendor/bin/hw/android.hardware.graphics.allocator@4.0-service
-vendor/etc/init/android.hardware.graphics.allocator@4.0-service.rc
-vendor/lib/arm.graphics-V3-ndk.so
-vendor/lib/hw/android.hardware.graphics.allocator@4.0-impl-arm.so
-vendor/lib/hw/android.hardware.graphics.mapper@4.0-impl-arm.so
-vendor/lib/libamgralloc_ext.so
+vendor/bin/hw/android.hardware.graphics.allocator@4.0-service|1fa34edfe036471535acb0e3ffc98ec761b6ebc2
+vendor/etc/init/android.hardware.graphics.allocator@4.0-service.rc|0417d92e52088b42081845eddd3eecdba4213370
+vendor/lib/arm.graphics-V3-ndk.so|31320ae60c981caeabfb9608c766b60f35d5b90c
+vendor/lib/hw/android.hardware.graphics.allocator@4.0-impl-arm.so|56d18ac619f45633bd317a9d3bf661e48070e502|f39af70ef7689ca1f50066c7674dd6cab5b2782a
+vendor/lib/hw/android.hardware.graphics.mapper@4.0-impl-arm.so|e76d463c264717b2acee424575c5665f27dbecc9|c2c6a73d3580926c9f5d2c8e2854a9e9699ec04b
+vendor/lib/libamgralloc_ext.so|d01b519a40d21b81ddfe16467c68691d2d049bc9
 
 ## Graphics (Mali) - from HY300pro t950s_be311
-vendor/etc/gralloc/cam.xml
-vendor/etc/gralloc/dpu.xml
-vendor/etc/gralloc/dpu_aeu.xml
-vendor/etc/gralloc/gpu.xml
-vendor/etc/gralloc/vpu.xml
-vendor/lib/egl/libGLES_mali.so
+vendor/etc/gralloc/cam.xml|edd6bc76a1089905ebdda43712cbc9e6b97d943c
+vendor/etc/gralloc/dpu.xml|ecec48ab9e02a59f7c1e966f16fdfcdab9f8fd7d
+vendor/etc/gralloc/dpu_aeu.xml|031f84bd77d93b15d2d05310277c19cfa4f98832
+vendor/etc/gralloc/gpu.xml|e26e101b11a9987c056f92be51e39f6415c787cd
+vendor/etc/gralloc/vpu.xml|96f43f37d82f2258b1a2e14bfb05468a9209e84f
+vendor/lib/egl/libGLES_mali.so|21b8cb944eaa331197608041df2844f8c1a1b82a
 
 ## HDMI CEC
 vendor/lib/hw/hdmi_cec.amlogic.so
