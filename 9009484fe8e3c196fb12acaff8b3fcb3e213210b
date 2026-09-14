@@ -22,6 +22,30 @@
       },
       "revId": "9009484fe8e3c196fb12acaff8b3fcb3e213210b",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "635ccde5_6b7c9b6f",
+        "filename": "init/init.amlogic.rc",
+        "patchSetId": 1
+      },
+      "lineNbr": 25,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2026-09-14T16:35:59Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "3fc6ac16_9115c3ff",
+      "range": {
+        "startLine": 25,
+        "startChar": 0,
+        "endLine": 25,
+        "endChar": 34
+      },
+      "revId": "9009484fe8e3c196fb12acaff8b3fcb3e213210b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
