@@ -33,7 +33,7 @@
   ],
   "Actions": [
     {
-      "PowerHint": "INTERACTIVE",
+      "PowerHint": "DISPLAY_INACTIVE",
       "Node": "INTERACTIVE_ACTION",
       "Duration": 0,
       "Value": "1"
